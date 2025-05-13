@@ -1,0 +1,1921 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <!-- Libs -->
+    <link rel="stylesheet" href="assets/libs/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/fonts/wedding-icon-font/flaticon.css">
+    <link rel="stylesheet" href="assets/fonts/fontello/css/fontello.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-default.min.css" />
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <!-- CSS for all Flaticon UIcons -->
+    <link href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons@3.3.1/css/all/all.min.css" rel="stylesheet">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="assets/css/theme.min.css">
+    <title>Venues - Wedding Banquet</title>
+
+</head>
+
+<body>
+    <div class="dot"></div>
+    <div class="cursor-outline"></div>
+    <!-- navbar -->
+    <!-- navbar -->
+   <div class="navbar-transparent navbar-position">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="index-2.html">
+
+                <span style="color: red;">Ban</span>Quet
+
+              </a>
+              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto ms-auto">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="index.html" id="navbarHome"  >
+                      Home
+                    </a>
+
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="venues.html" id="navbarListing">
+                      Venues
+                    </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="vendors.html" id="navbarListing">
+                      Vendor
+                    </a>
+                  </li>
+                 
+
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="gallery.html" aria-expanded="false">
+                      Gallery
+                    </a>
+                    
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="realWedding.html" aria-expanded="false">
+                      Real Wedding
+                    </a>
+                    
+                  </li>
+                   <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="blog.html" id="blogDropdown" role="button">
+                      Blog
+                    </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="about.html" aria-expanded="false">
+                      About us
+                    </a>
+
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="contact.html" aria-expanded="false">
+                      Contact
+                    </a>
+
+                  </li>
+                </ul>
+                <div class="p-3 p-lg-0">
+
+                  <!-- <a href="pages/signin.html" class="btn btn-secondary shadow-sm">Sign in</a> -->
+                  <a href="#" class="btn btn2 style1 rounded">Get Started Now</a>
+
+
+
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- hero start -->
+    <main>
+        <section class="pt-lg-21 pt-10 overlay-section "
+            style="background: url(./assets/images/banner/bann4.png)no-repeat; background-size: cover; background-position: center center;">
+
+            <div class="container">
+                <div class="row justify-content-center pb-lg-21 pb-10 ">
+                    <!-- hero captions -->
+                    <div class="col-lg-9 col-md-12">
+                        <div class="text-white text-center">
+                            <h1 class="display-3 fw-bold text-white" id="heading">Find Wedding Venues</h1>
+                            <p class="lead mb-0">Browse the best wedding vendors in your area — from venues and
+                                photographers, to wedding planners, caterers, florists and more.</p>
+                        </div>
+                        <div class=" mt-5">
+                            <!-- card -->
+                            <div class="card bg-dark bg-opacity-50 border-0">
+                                <!-- card body -->
+                                <div class="card-body p-3">
+                                    <!-- form -->
+                                    <form>
+                                        <div class="row g-2">
+                                            <!-- col -->
+                                            <div class="col-sm">
+
+                                                <select class="form-select border-white" id="selectVenue"
+                                                    aria-label="Floating label select example">
+                                                    <option selected>Wedding Venue</option>
+                                                    <option value="Barns & Farms">Barns & Farms</option>
+                                                    <option value="Hotels">Hotels</option>
+                                                    <option value="Wineries & Breweries">Wineries & Breweries</option>
+                                                    <option value="Country Clubs">Country Clubs</option>
+                                                    <option value="Restaurants">Restaurants</option>
+                                                    <option value="Rooftops & Lofts">Rooftops & Lofts</option>
+                                                    <option value="Mansions">Mansions</option>
+                                                    <option value="Churches & Temples">Churches & Temples</option>
+                                                    <option value="Museums">Museums</option>
+                                                    <option value="Boats">Boats</option>
+                                                    <option value="Parks">Parks</option>
+                                                    <option value="Historic Venues">Historic Venues</option>
+                                                    <option value="Banquet Halls">Banquet Halls</option>
+                                                    <option value="Beaches">Beaches</option>
+                                                    <option value="Gardens">Gardens</option>
+                                                    <option value="Waterfronts">Waterfronts</option>
+                                                </select>
+
+
+                                            </div>
+                                            <!-- col -->
+                                            <div class="col-sm ">
+
+                                                <select class="form-select border-white"
+                                                    aria-label="Floating label select example">
+                                                    <option selected>Where</option>
+                                                    <option value="London">London</option>
+                                                    <option value="Paris">Paris</option>
+                                                    <option value="Barcelona">Barcelona</option>
+                                                    <option value="New York">New York</option>
+
+                                                </select>
+
+
+                                            </div>
+                                            <!-- col -->
+                                            <div class="col-sm-2">
+                                                <div class="d-grid ">
+                                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- vendor category -->
+
+        <!-- vendor category -->
+
+
+        <!-- venues area -->
+        <div class="ltn__apartments-plan-area pt-115--- ptb-100" id="floorplan">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title-area ltn__section-title-2--- text-center">
+                            <h6 class="section-subtitle section-subtitle-2 ltn__secondary-color">Banquet</h6>
+                             <img src="assets/images/wedding arrow.png" alt="">
+                            <h1 class="section-title">Browse Venues</h1>
+                            <p class="mb-0">You can browse all venues by category with thumbnail image and category
+                                name.</p>
+                        </div>
+                        <div
+                            class="ltn__tab-menu ltn__tab-menu-3 ltn__tab-menu-top-right-- text-uppercase--- text-center">
+                            <div class="nav">
+
+                                <div class="swiper mySwiper-5 swiper-location-tabs ">
+                                    <div class="swiper-wrapper" style="width: 100vw;">
+                                        <div class="swiper-slide text-center">
+                                            <div class="flex flex-direction-column">
+                                                <a class="active show" data-bs-toggle="tab" href="#liton_tab_3_1"><img
+                                                        src="https://cdn.pixabay.com/photo/2016/11/17/09/28/hotel-1831072_1280.jpg"
+                                                        class="card-img pull-up" alt=""
+                                                        style="width: 100px; height: 100px; border-radius: 50%;">
+                                                    <p class="text-center">New Delhi</p>
+                                                </a>
+
+                                            </div>
+                                            <!-- <div class=" text-white border-0 mb-4 mb-lg-0 img-overlay pull-up card-1" style="border-radius: 50%;">
+                                               
+                                            </div> -->
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="flex flex-direction-column">
+                                                <a data-bs-toggle="tab" href="#liton_tab_3_2"> <img
+                                                        src="https://cdn.pixabay.com/photo/2013/02/26/01/10/auditorium-86197_1280.jpg"
+                                                        class="card-img pull-up" alt=""
+                                                        style="width: 100px; height: 100px; border-radius: 50%;">
+                                                    <p class="text-center">Mumbai</p>
+                                                </a>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="flex flex-direction-column">
+                                                <a data-bs-toggle="tab" href="#liton_tab_3_3"> <img
+                                                        src="https://etimg.etb2bimg.com/photo/87623949.cms"
+                                                        class="card-img pull-up" alt=""
+                                                        style="width: 100px; height: 100px; border-radius: 50%;">
+                                                    <p class="text-center">Bangalore</p>
+                                                </a>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="flex flex-direction-column">
+                                                <a data-bs-toggle="tab" href="#liton_tab_3_4"> <img
+                                                        src="https://cdn.pixabay.com/photo/2015/07/14/07/18/greece-844269_1280.jpg"
+                                                        class="card-img pull-up" alt=""
+                                                        style="width: 100px; height: 100px; border-radius: 50%;">
+                                                    <p class="text-center">Hyderabad</p>
+                                                </a>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="flex flex-direction-column">
+                                                <a data-bs-toggle="tab" href="#liton_tab_3_5"> <img
+                                                        src="https://www.weddingbee.com/wp-content/uploads/2020/01/garden-wedding-581986.jpg"
+                                                        class="card-img pull-up" alt=""
+                                                        style="width: 100px; height: 100px; border-radius: 50%;">
+                                                    <p class="text-center">Chennai</p>
+                                                </a>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="flex flex-direction-column">
+                                                <a data-bs-toggle="tab" href="#liton_tab_3_6"> <img
+                                                        src="https://www.weddingbee.com/wp-content/uploads/2020/01/garden-wedding-581986.jpg"
+                                                        class="card-img pull-up" alt=""
+                                                        style="width: 100px; height: 100px; border-radius: 50%;">
+                                                    <p class="text-center">Punjab</p>
+                                                </a>
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <!-- New Delhi -->
+
+                            <div class="tab-pane active fade animate__animated" id="liton_tab_3_1">
+                                <div class="project-slider-one owl-carousel">
+                                    <div class="project-card">
+                                        <img src="https://cdn.pixabay.com/photo/2021/08/17/06/19/bride-6552057_960_720.jpg"
+                                            alt="Image">
+                                        <div class="project-info">
+                                            <div class="project-title">
+                                                <h3><a href="project-details.html">The Leela Palace</a></h3>
+                                                <p>Chanakyapuri</p>
+                                            </div>
+                                            <a href="project-details.html" class="project-link"><i class="flaticon-next"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="project-card">
+                                        <img src="https://shaadiwish.com/blog/wp-content/uploads/2020/10/best-wedding-venues-1024x682.jpg"
+                                            alt="Image">
+                                        <div class="project-info">
+                                            <div class="project-title">
+                                                <h3><a href="project-details.html">Hyatt Regency</a></h3>
+                                                <p> Bhikaji Cama Place</p>
+                                            </div>
+                                            <a href="project-details.html" class="project-link"><i class="flaticon-next"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="project-card">
+                                        <img src="https://images.zola.com/f7402f16-73d5-4891-ab04-14c5e5952efd?w=400&h=268&fit=crop&q=60&fm=webp"
+                                            alt="Image">
+                                        <div class="project-info">
+                                            <div class="project-title">
+                                                <h3><a href="project-details.html">The Lalit</a></h3>
+                                                <p>Connaught Place</p>
+                                            </div>
+                                            <a href="project-details.html" class="project-link"><i class="flaticon-next"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="project-card">
+                                        <img src="https://www.theknot.com/tk-media/images/bbc7a045-5ae8-4cb3-b050-1c9cfde11a9a"
+                                            alt="Image">
+                                        <div class="project-info">
+                                            <div class="project-title">
+                                                <h3><a href="project-details.html">Taj Palace</a></h3>
+                                                <p>Sardar Patel Marg</p>
+                                            </div>
+                                            <a href="project-details.html" class="project-link"><i class="flaticon-next"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="project-card">
+                                        <img src="https://i.pinimg.com/736x/9e/24/9b/9e249b9bcf1ce550fbc7f1a27c7d8f07.jpg"
+                                            alt="Image">
+                                        <div class="project-info">
+                                            <div class="project-title">
+                                                <h3><a href="project-details.html">Radisson Blu</a></h3>
+                                                <p>Kaushambi</p>
+                                            </div>
+                                            <a href="project-details.html" class="project-link"><i class="flaticon-next"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="project-card">
+                                        <img src="https://taste-food.com/wp-content/uploads/lowblueflame_An_ultra-realistic_photograph_of_a_festive_winter__988020cd-a1d1-4dbe-b950-ebbe5f19fc51-1600x1000.jpg"
+                                            alt="Image">
+                                        <div class="project-info">
+                                            <div class="project-title">
+                                                <h3><a href="project-details.html">The Imperial</a></h3>
+                                                <p>Janpath</p>
+                                            </div>
+                                            <a href="project-details.html" class="project-link"><i class="flaticon-next"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Mumbai -->
+                            <div class="tab-pane show fade animate__animated" id="liton_tab_3_2">
+                                <div class="project-slider-one owl-carousel">
+                                    <div class="project-card">
+                                        <img src="https://cdn.pixabay.com/photo/2021/08/17/06/19/bride-6552057_960_720.jpg"
+                                            alt="Image">
+                                        <div class="project-info">
+                                            <div class="project-title">
+                                                <h3><a href="project-details.html">Taj Mahal Palace</a></h3>
+                                                <p>Colaba</p>
+                                            </div>
+                                            <a href="project-details.html" class="project-link"><i
+                                                    class="flaticon-next"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="project-card">
+                                        <img src="https://shaadiwish.com/blog/wp-content/uploads/2020/10/best-wedding-venues-1024x682.jpg"
+                                            alt="Image">
+                                        <div class="project-info">
+                                            <div class="project-title">
+                                                <h3><a href="project-details.html">JW Marriott Mumbai</a></h3>
+                                                <p>Juhu</p>
+                                            </div>
+                                            <a href="project-details.html" class="project-link"><i
+                                                    class="flaticon-next"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="project-card">
+                                        <img src="https://images.zola.com/f7402f16-73d5-4891-ab04-14c5e5952efd?w=400&h=268&fit=crop&q=60&fm=webp"
+                                            alt="Image">
+                                        <div class="project-info">
+                                            <div class="project-title">
+                                                <h3><a href="project-details.html"> The St. Regis Mumbai</a></h3>
+                                                <p>Lower Parel</p>
+                                            </div>
+                                            <a href="project-details.html" class="project-link"><i
+                                                    class="flaticon-next"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="project-card">
+                                        <img src="https://www.theknot.com/tk-media/images/bbc7a045-5ae8-4cb3-b050-1c9cfde11a9a"
+                                            alt="Image">
+                                        <div class="project-info">
+                                            <div class="project-title">
+                                                <h3><a href="project-details.html">Four Seasons Hotel Mumbai</a></h3>
+                                                <p>Worli</p>
+                                            </div>
+                                            <a href="project-details.html" class="project-link"><i
+                                                    class="flaticon-next"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="project-card">
+                                        <img src="https://i.pinimg.com/736x/9e/24/9b/9e249b9bcf1ce550fbc7f1a27c7d8f07.jpg"
+                                            alt="Image">
+                                        <div class="project-info">
+                                            <div class="project-title">
+                                                <h3><a href="project-details.html">Grand Hyatt Mumbai</a></h3>
+                                                <p>Santacruz</p>
+                                            </div>
+                                            <a href="project-details.html" class="project-link"><i
+                                                    class="flaticon-next"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="project-card">
+                                        <img src="https://taste-food.com/wp-content/uploads/lowblueflame_An_ultra-realistic_photograph_of_a_festive_winter__988020cd-a1d1-4dbe-b950-ebbe5f19fc51-1600x1000.jpg"
+                                            alt="Image">
+                                        <div class="project-info">
+                                            <div class="project-title">
+                                                <h3><a href="project-details.html">Novotel Mumbai</a></h3>
+                                                <p>Juhu Beach</p>
+                                            </div>
+                                            <a href="project-details.html" class="project-link"><i
+                                                    class="flaticon-next"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Bangalore -->
+                            <div class="tab-pane show fade animate__animated" id="liton_tab_3_3">
+                                <div class="project-slider-one owl-carousel">
+                                    <div class="project-card">
+                                        <img src="https://cdn.pixabay.com/photo/2021/08/17/06/19/bride-6552057_960_720.jpg"
+                                            alt="Image">
+                                        <div class="project-info">
+                                            <div class="project-title">
+                                                <h3><a href="project-details.html">The Tamarind Tree</a></h3>
+                                                <p>JP Nagar</p>
+                                            </div>
+                                            <a href="project-details.html" class="project-link"><i
+                                                    class="flaticon-next"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="project-card">
+                                        <img src="https://shaadiwish.com/blog/wp-content/uploads/2020/10/best-wedding-venues-1024x682.jpg"
+                                            alt="Image">
+                                        <div class="project-info">
+                                            <div class="project-title">
+                                                <h3><a href="project-details.html">Taj West End</a></h3>
+                                                <p>Race Course Road</p>
+                                            </div>
+                                            <a href="project-details.html" class="project-link"><i
+                                                    class="flaticon-next"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="project-card">
+                                        <img src="https://images.zola.com/f7402f16-73d5-4891-ab04-14c5e5952efd?w=400&h=268&fit=crop&q=60&fm=webp"
+                                            alt="Image">
+                                        <div class="project-info">
+                                            <div class="project-title">
+                                                <h3><a href="project-details.html">MoonGate Events Venue</a></h3>
+                                                <p>North Bangalore</p>
+                                            </div>
+                                            <a href="project-details.html" class="project-link"><i
+                                                    class="flaticon-next"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="project-card">
+                                        <img src="https://www.theknot.com/tk-media/images/bbc7a045-5ae8-4cb3-b050-1c9cfde11a9a"
+                                            alt="Image">
+                                        <div class="project-info">
+                                            <div class="project-title">
+                                                <h3><a href="project-details.html">The Groves</a></h3>
+                                                <p>Bangalore</p>
+                                            </div>
+                                            <a href="project-details.html" class="project-link"><i
+                                                    class="flaticon-next"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="project-card">
+                                        <img src="https://i.pinimg.com/736x/9e/24/9b/9e249b9bcf1ce550fbc7f1a27c7d8f07.jpg"
+                                            alt="Image">
+                                        <div class="project-info">
+                                            <div class="project-title">
+                                                <h3><a href="project-details.html">JW Marriott Hotel</a></h3>
+                                                <p>Vittal Mallya Road</p>
+                                            </div>
+                                            <a href="project-details.html" class="project-link"><i
+                                                    class="flaticon-next"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="project-card">
+                                        <img src="https://taste-food.com/wp-content/uploads/lowblueflame_An_ultra-realistic_photograph_of_a_festive_winter__988020cd-a1d1-4dbe-b950-ebbe5f19fc51-1600x1000.jpg"
+                                            alt="Image">
+                                        <div class="project-info">
+                                            <div class="project-title">
+                                                <h3><a href="project-details.html">Big Banyan Vineyard</a></h3>
+                                                <p> Mysore Road</p>
+                                            </div>
+                                            <a href="project-details.html" class="project-link"><i
+                                                    class="flaticon-next"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                                
+                            </div>
+                            <!-- Hydrabad -->
+                            <div class="tab-pane show fade animate__animated" id="liton_tab_3_4">
+                                <div class="project-slider-one owl-carousel">
+                                    <div class="project-card">
+                                        <img src="https://cdn.pixabay.com/photo/2021/08/17/06/19/bride-6552057_960_720.jpg"
+                                            alt="Image">
+                                        <div class="project-info">
+                                            <div class="project-title">
+                                                <h3><a href="project-details.html"> Taj Falaknuma Palace</a></h3>
+                                                <p>Falaknuma</p>
+                                            </div>
+                                            <a href="project-details.html" class="project-link"><i
+                                                    class="flaticon-next"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="project-card">
+                                        <img src="https://shaadiwish.com/blog/wp-content/uploads/2020/10/best-wedding-venues-1024x682.jpg"
+                                            alt="Image">
+                                        <div class="project-info">
+                                            <div class="project-title">
+                                                <h3><a href="project-details.html">Chowmahalla Palace</a></h3>
+                                                <p>Khilwat</p>
+                                            </div>
+                                            <a href="project-details.html" class="project-link"><i
+                                                    class="flaticon-next"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="project-card">
+                                        <img src="https://images.zola.com/f7402f16-73d5-4891-ab04-14c5e5952efd?w=400&h=268&fit=crop&q=60&fm=webp"
+                                            alt="Image">
+                                        <div class="project-info">
+                                            <div class="project-title">
+                                                <h3><a href="project-details.html">ITC Kohenur</a></h3>
+                                                <p>Hitech City</p>
+                                            </div>
+                                            <a href="project-details.html" class="project-link"><i
+                                                    class="flaticon-next"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="project-card">
+                                        <img src="https://www.theknot.com/tk-media/images/bbc7a045-5ae8-4cb3-b050-1c9cfde11a9a"
+                                            alt="Image">
+                                        <div class="project-info">
+                                            <div class="project-title">
+                                                <h3><a href="project-details.html">Novotel Convention Centre</a></h3>
+                                                <p>Hitech City</p>
+                                            </div>
+                                            <a href="project-details.html" class="project-link"><i
+                                                    class="flaticon-next"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="project-card">
+                                        <img src="https://i.pinimg.com/736x/9e/24/9b/9e249b9bcf1ce550fbc7f1a27c7d8f07.jpg"
+                                            alt="Image">
+                                        <div class="project-info">
+                                            <div class="project-title">
+                                                <h3><a href="project-details.html">Browntown Resort</a></h3>
+                                                <p>Moinabad</p>
+                                            </div>
+                                            <a href="project-details.html" class="project-link"><i
+                                                    class="flaticon-next"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="project-card">
+                                        <img src="https://taste-food.com/wp-content/uploads/lowblueflame_An_ultra-realistic_photograph_of_a_festive_winter__988020cd-a1d1-4dbe-b950-ebbe5f19fc51-1600x1000.jpg"
+                                            alt="Image">
+                                        <div class="project-info">
+                                            <div class="project-title">
+                                                <h3><a href="project-details.html">SSR Convention AC</a></h3>
+                                                <p>Shamshabad</p>
+                                            </div>
+                                            <a href="project-details.html" class="project-link"><i
+                                                    class="flaticon-next"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <!-- Chennai -->
+                            <div class="tab-pane show fade animate__animated" id="liton_tab_3_5">
+                                <div class="project-slider-one owl-carousel">
+                                    <div class="project-card">
+                                        <img src="https://cdn.pixabay.com/photo/2021/08/17/06/19/bride-6552057_960_720.jpg"
+                                            alt="Image">
+                                        <div class="project-info">
+                                            <div class="project-title">
+                                                <h3><a href="project-details.html">ITC Grand Chola</a></h3>
+                                                <p>Guindy</p>
+                                            </div>
+                                            <a href="project-details.html" class="project-link"><i
+                                                    class="flaticon-next"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="project-card">
+                                        <img src="https://shaadiwish.com/blog/wp-content/uploads/2020/10/best-wedding-venues-1024x682.jpg"
+                                            alt="Image">
+                                        <div class="project-info">
+                                            <div class="project-title">
+                                                <h3><a href="project-details.html">The Leela Palace</a></h3>
+                                                <p>MRC Nagar</p>
+                                            </div>
+                                            <a href="project-details.html" class="project-link"><i
+                                                    class="flaticon-next"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="project-card">
+                                        <img src="https://images.zola.com/f7402f16-73d5-4891-ab04-14c5e5952efd?w=400&h=268&fit=crop&q=60&fm=webp"
+                                            alt="Image">
+                                        <div class="project-info">
+                                            <div class="project-title">
+                                                <h3><a href="project-details.html">GPN Palace</a></h3>
+                                                <p>Vanagaram</p>
+                                            </div>
+                                            <a href="project-details.html" class="project-link"><i
+                                                    class="flaticon-next"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="project-card">
+                                        <img src="https://www.theknot.com/tk-media/images/bbc7a045-5ae8-4cb3-b050-1c9cfde11a9a"
+                                            alt="Image">
+                                        <div class="project-info">
+                                            <div class="project-title">
+                                                <h3><a href="project-details.html">Taj Fisherman's Cove Resort</a></h3>
+                                                <p>Covelong</p>
+                                            </div>
+                                            <a href="project-details.html" class="project-link"><i
+                                                    class="flaticon-next"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="project-card">
+                                        <img src="https://i.pinimg.com/736x/9e/24/9b/9e249b9bcf1ce550fbc7f1a27c7d8f07.jpg"
+                                            alt="Image">
+                                        <div class="project-info">
+                                            <div class="project-title">
+                                                <h3><a href="project-details.html">SPP Gardens</a></h3>
+                                                <p>Near Anna Nagar</p>
+                                            </div>
+                                            <a href="project-details.html" class="project-link"><i
+                                                    class="flaticon-next"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="project-card">
+                                        <img src="https://taste-food.com/wp-content/uploads/lowblueflame_An_ultra-realistic_photograph_of_a_festive_winter__988020cd-a1d1-4dbe-b950-ebbe5f19fc51-1600x1000.jpg"
+                                            alt="Image">
+                                        <div class="project-info">
+                                            <div class="project-title">
+                                                <h3><a href="project-details.html">Blue Bay Beach Resort</a></h3>
+                                                <p>East Coast Road</p>
+                                            </div>
+                                            <a href="project-details.html" class="project-link"><i
+                                                    class="flaticon-next"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <!-- Punjab -->
+                            <div class="tab-pane show fade animate__animated" id="liton_tab_3_6">
+                                <div class="project-slider-one owl-carousel">
+                                    <div class="project-card">
+                                        <img src="https://cdn.pixabay.com/photo/2021/08/17/06/19/bride-6552057_960_720.jpg"
+                                            alt="Image">
+                                        <div class="project-info">
+                                            <div class="project-title">
+                                                <h3><a href="project-details.html">Qila Mubarak</a></h3>
+                                                <p>Patiala</p>
+                                            </div>
+                                            <a href="project-details.html" class="project-link"><i
+                                                    class="flaticon-next"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="project-card">
+                                        <img src="https://shaadiwish.com/blog/wp-content/uploads/2020/10/best-wedding-venues-1024x682.jpg"
+                                            alt="Image">
+                                        <div class="project-info">
+                                            <div class="project-title">
+                                                <h3><a href="project-details.html">Gaj Retreat</a></h3>
+                                                <p>Hoshiarpur</p>
+                                            </div>
+                                            <a href="project-details.html" class="project-link"><i
+                                                    class="flaticon-next"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="project-card">
+                                        <img src="https://images.zola.com/f7402f16-73d5-4891-ab04-14c5e5952efd?w=400&h=268&fit=crop&q=60&fm=webp"
+                                            alt="Image">
+                                        <div class="project-info">
+                                            <div class="project-title">
+                                                <h3><a href="project-details.html">The Kikar Lodge</a></h3>
+                                                <p>Rupnagar</p>
+                                            </div>
+                                            <a href="project-details.html" class="project-link"><i
+                                                    class="flaticon-next"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="project-card">
+                                        <img src="https://www.theknot.com/tk-media/images/bbc7a045-5ae8-4cb3-b050-1c9cfde11a9a"
+                                            alt="Image">
+                                        <div class="project-info">
+                                            <div class="project-title">
+                                                <h3><a href="project-details.html">Anand At The Satluj</a></h3>
+                                                <p> Anandpur Sahib</p>
+                                            </div>
+                                            <a href="project-details.html" class="project-link"><i
+                                                    class="flaticon-next"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="project-card">
+                                        <img src="https://i.pinimg.com/736x/9e/24/9b/9e249b9bcf1ce550fbc7f1a27c7d8f07.jpg"
+                                            alt="Image">
+                                        <div class="project-info">
+                                            <div class="project-title">
+                                                <h3><a href="project-details.html">Hotel Royal Court</a></h3>
+                                                <p>Ludhiana</p>
+                                            </div>
+                                            <a href="project-details.html" class="project-link"><i
+                                                    class="flaticon-next"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="project-card">
+                                        <img src="https://taste-food.com/wp-content/uploads/lowblueflame_An_ultra-realistic_photograph_of_a_festive_winter__988020cd-a1d1-4dbe-b950-ebbe5f19fc51-1600x1000.jpg"
+                                            alt="Image">
+                                        <div class="project-info">
+                                            <div class="project-title">
+                                                <h3><a href="project-details.html">The Baradari Palace</a></h3>
+                                                <p>Patiala</p>
+                                            </div>
+                                            <a href="project-details.html" class="project-link"><i
+                                                    class="flaticon-next"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Inhouse services -->
+        <section class="pb-10">
+            <div class="container">
+                <div class="row align-items-center mb-6">
+                    <!-- caption -->
+                    <div class="col-md-12 col-12 text-center ">
+                        <h2 class="mb-1">Latest Wedding Venue</h2>
+                        <img src="assets/images/wedding arrow.png" alt="">
+                        <p class="mb-0">A short description for showcase of latest wedding venue.</p>
+                    </div>
+
+                </div>
+
+                <div class="swiper vlogMySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <!-- post -->
+                            <div class="card mb-4 mb-md-0">
+                                <div class="position-relative mb-0">
+                                    <div class="img-hover">
+                                        <a href="#">
+                                            <img src="assets/images/cards/card1.png" alt="vendor1"
+                                                class="img-fluid w-100">
+                                        </a>
+                                    </div>
+                                    <div class="position-absolute top-0 end-0 p-4">
+                                        <a href="#" class="text-white text-hover-primary" data-bs-toggle="modal"
+                                            data-bs-target="#favouriteIcon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="20" height="20" fill="currentColor" class="bi bi-heart"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="mb-1">
+                                        <a href="#" class="text-inherit">Hotel Royal Court</a>
+                                    </h3>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="var(--rw-gray-400)" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                        </svg>
+                                    </span>
+
+                                    <span class="mb-0">Ludhiana,<span class="ms-1">Punjab.</span></span>
+                                </div>
+                                <div class="row  g-0 border-top align-items-center">
+                                    <div class="col-4">
+                                        <div class="text-center py-3">
+                                            <h5 class="mb-0">$150</h5>
+                                            <p class="mb-0 small">Start From</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 border-start">
+                                        <div class="text-center py-3 ">
+                                            <h5 class="mb-0">120</h5>
+                                            <p class="mb-0 small">Guest</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 border-start">
+                                        <div class="text-center py-3 ">
+                                            <div class="lh-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                    fill="var(--rw-warning)" class="bi bi-star-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                    fill="var(--rw-warning)" class="bi bi-star-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                    fill="var(--rw-warning)" class="bi bi-star-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                    fill="var(--rw-warning)" class="bi bi-star-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                    fill="var(--rw-gray-400)" class="bi bi-star-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                            </div>
+                                            <p class="mb-0 small">(12)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <!-- post -->
+                            <div class="card mb-4 mb-md-0">
+                                <div class="position-relative mb-0">
+                                    <div class="img-hover">
+                                        <a href="#">
+                                            <img src="assets/images/cards/card2.png" alt="vendor1"
+                                                class="img-fluid w-100">
+                                        </a>
+                                    </div>
+                                    <div class="position-absolute top-0 end-0 p-4">
+                                        <a href="#" class="text-white text-hover-primary" data-bs-toggle="modal"
+                                            data-bs-target="#favouriteIcon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="20" height="20" fill="currentColor" class="bi bi-heart"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="mb-1">
+                                        <a href="#" class="text-inherit"> Blue Bay Beach Resort</a>
+                                    </h3>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="var(--rw-gray-400)" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                        </svg>
+                                    </span>
+
+                                    <span class="mb-0">East Coast Road,<span class="ms-1">Chennai</span></span>
+                                </div>
+                                <div class="row  g-0 border-top align-items-center">
+                                    <div class="col-4">
+                                        <div class="text-center py-3">
+                                            <h5 class="mb-0">$150</h5>
+                                            <p class="mb-0 small">Start From</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 border-start">
+                                        <div class="text-center py-3 ">
+                                            <h5 class="mb-0">120</h5>
+                                            <p class="mb-0 small">Guest</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 border-start">
+                                        <div class="text-center py-3 ">
+                                            <div class="lh-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                    fill="var(--rw-warning)" class="bi bi-star-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                    fill="var(--rw-warning)" class="bi bi-star-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                    fill="var(--rw-warning)" class="bi bi-star-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                    fill="var(--rw-warning)" class="bi bi-star-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                    fill="var(--rw-gray-400)" class="bi bi-star-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                            </div>
+                                            <p class="mb-0 small">(12)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card mb-4 mb-md-0">
+                                <div class="position-relative mb-0">
+                                    <div class="img-hover">
+                                        <a href="#">
+                                            <img src="assets/images/cards/card3.png" alt="vendor1"
+                                                class="img-fluid w-100">
+                                        </a>
+                                    </div>
+                                    <div class="position-absolute top-0 end-0 p-4">
+                                        <a href="#" class="text-white text-hover-primary" data-bs-toggle="modal"
+                                            data-bs-target="#favouriteIcon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="20" height="20" fill="currentColor" class="bi bi-heart"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="mb-1">
+                                        <a href="#" class="text-inherit"> Taj Falaknuma Palace</a>
+                                    </h3>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="var(--rw-gray-400)" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                        </svg>
+                                    </span>
+
+                                    <span class="mb-0">Falaknuma,<span class="ms-1">Hydrabad.</span></span>
+                                </div>
+                                <div class="row  g-0 border-top align-items-center">
+                                    <div class="col-4">
+                                        <div class="text-center py-3">
+                                            <h5 class="mb-0">$150</h5>
+                                            <p class="mb-0 small">Start From</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 border-start">
+                                        <div class="text-center py-3 ">
+                                            <h5 class="mb-0">120</h5>
+                                            <p class="mb-0 small">Guest</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 border-start">
+                                        <div class="text-center py-3 ">
+                                            <div class="lh-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                    fill="var(--rw-warning)" class="bi bi-star-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                    fill="var(--rw-warning)" class="bi bi-star-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                    fill="var(--rw-warning)" class="bi bi-star-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                    fill="var(--rw-warning)" class="bi bi-star-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                    fill="var(--rw-gray-400)" class="bi bi-star-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                            </div>
+                                            <p class="mb-0 small">(12)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card mb-4 mb-md-0">
+                                <div class="position-relative mb-0">
+                                    <div class="img-hover">
+                                        <a href="#">
+                                            <img src="assets/images/cards/card4.png" alt="vendor1"
+                                                class="img-fluid w-100">
+                                        </a>
+                                    </div>
+                                    <div class="position-absolute top-0 end-0 p-4">
+                                        <a href="#" class="text-white text-hover-primary" data-bs-toggle="modal"
+                                            data-bs-target="#favouriteIcon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="20" height="20" fill="currentColor" class="bi bi-heart"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="mb-1">
+                                        <a href="#" class="text-inherit">The Tamarind Tree</a>
+                                    </h3>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="var(--rw-gray-400)" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                        </svg>
+                                    </span>
+
+                                    <span class="mb-0">JP Nagar,<span class="ms-1">Bangalore.</span></span>
+                                </div>
+                                <div class="row  g-0 border-top align-items-center">
+                                    <div class="col-4">
+                                        <div class="text-center py-3">
+                                            <h5 class="mb-0">$150</h5>
+                                            <p class="mb-0 small">Start From</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 border-start">
+                                        <div class="text-center py-3 ">
+                                            <h5 class="mb-0">120</h5>
+                                            <p class="mb-0 small">Guest</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 border-start">
+                                        <div class="text-center py-3 ">
+                                            <div class="lh-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                    fill="var(--rw-warning)" class="bi bi-star-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                    fill="var(--rw-warning)" class="bi bi-star-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                    fill="var(--rw-warning)" class="bi bi-star-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                    fill="var(--rw-warning)" class="bi bi-star-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                    fill="var(--rw-gray-400)" class="bi bi-star-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                            </div>
+                                            <p class="mb-0 small">(12)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+<!-- exercise card -->
+ 
+
+
+
+
+
+        <!-- submit list -->
+        <section class="py-8 bg-primary ">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-9 col-lg-8">
+                        <div class=" mb-4 mb-md-0">
+                            <h2 class="text-white fs-1 mb-1">Submit your Listing Right Now!</h2>
+                            <p class="text-white mb-0 ">Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do
+                                eiusmod tempor.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-4 text-lg-end SubmitBtn">
+                        <a href="#" class="btn btn-white slide-bg">Submit Now</a>
+                      </div>
+                      
+                </div>
+            </div>
+        </section>
+       
+    </main>
+    <!-- articles close -->
+
+
+
+    <footer class="pt-12 pb-0">
+        <div class="container">
+            <div class="row">
+                <!-- col -->
+                <div class="col-lg-5 col-md-6 col-12">
+                    <!-- para -->
+                    <div class="mb-4 mb-lg-0 content">
+
+                        <a class="navbar-brand fs-2" href="index-2.html">
+
+                            <span style="color: red;">Ban</span>Quet
+
+                        </a>
+
+
+                        <p class="mb-0 mt-4 pe-lg-16">Discover the most high rated wedding vendors and plan your wedding
+                            more
+                            better, forever.</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <!-- list -->
+                    <div class="mb-4 mb-lg-0">
+                        <h3 class="mb-3 text-light">Company</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="white text-body text-hover-primary">About us</a></li>
+                            <li><a href="#" class="white text-body text-hover-primary">Venues</a></li>
+                            <li><a href="#" class="white text-body text-hover-primary">Venders</a></li>
+                            <li><a href="#" class="white text-body text-hover-primary">Partner</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <!-- list -->
+                    <div class="mb-4 mb-lg-0">
+                        <h3 class="mb- text-light">Support</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="white text-body text-hover-primary">Get in Touch</a></li>
+                            <li><a href="#" class="white text-body text-hover-primary">Help Center</a></li>
+                            <li><a href="#" class="white text-body text-hover-primary">Live Chat</a></li>
+                            <li><a href="#" class="white text-body text-hover-primary">How it works</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <!-- contact -->
+                    <div class="mb-4 mb-lg-0">
+                        <h3 class="mb-3 text-light">Contact us</h3>
+                        <p class="mb-1">Email:<a href="#" class="ms-1 color-white">support@example.com</a></p>
+                        <p>Phone:<span class="white text-dark fw-semi-bold ms-2">(000)987 654 321 0</span></p>
+                    </div>
+                </div>
+            </div>
+            <!-- tiny footer -->
+            <div class="row mt-8 border-top pt-4 align-items-center">
+                <div class="col-md-10 col-12">
+                    <div class="d-flex fs-5 ">
+
+                        <div>
+                            &copy;
+                            <span id="copyright"> 2018 -
+                                <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+                            </span>
+                            RealWed
+                        </div>
+                        <div class="ms-3">
+                            <!-- list -->
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="#" class="color-white">PrivacyTerms</a></li>
+                                <li class="list-inline-item"><a href="#" class="color-white">Disclaimer</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-2 col-12">
+                    <div class="text-md-end lh-1">
+                        <!-- list -->
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#" class="text-body text-hover-primary"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                                        class="bi bi-facebook" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                    </svg></a></li>
+                            <li class="list-inline-item"><a href="#" class="text-body text-hover-primary"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                                        class="bi bi-twitter" viewBox="0 0 16 16">
+                                        <path
+                                            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                                    </svg></a></li>
+                            <li class="list-inline-item"><a href="#" class="text-body text-hover-primary"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                                        class="bi bi-instagram" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                    </svg></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- modal -->
+
+    <!-- Review Modal -->
+    <div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="reviewModalLabel" aria-hidden="true
+        <div class=" modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="reviewModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 col-12">
+                            <div class="row">
+                                <div class="col-md-12 col-12 mb-5">
+                                    <div class="d-md-flex align-items-center">
+                                        <div class="mb-3 mb-md-0">
+                                            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="var(--rw-warning)" class="bi bi-star-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg></span><span class="align-middle ms-1"><span
+                                                    class="text-primary fw-semi-bold me-1">4.95</span><span
+                                                    class="text-muted">(12
+                                                    Reviews)</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+                                    <div class="row align-items-center mb-2">
+                                        <div class="col-sm">Quality of service:</div>
+                                        <div class="col-sm">
+                                            <div class="progress" style="height: 6px;">
+                                                <div class="progress-bar" role="progressbar" style="width: 80%;"
+                                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-1">
+                                            <span>4.8</span>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center mb-2">
+                                        <div class="col-sm">Value:</div>
+                                        <div class="col-sm">
+                                            <div class="progress" style="height: 6px;">
+                                                <div class="progress-bar" role="progressbar" style="width: 90%;"
+                                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-1">
+                                            <span>4.0</span>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center mb-2">
+                                        <div class="col-sm">Professionalism:</div>
+                                        <div class="col-sm">
+                                            <div class="progress" style="height: 6px;">
+                                                <div class="progress-bar" role="progressbar" style="width: 100%;"
+                                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-1">
+                                            <span>5.0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 co-12">
+                                    <div class="row align-items-center mb-2">
+                                        <div class="col-sm">Responsiveness:</div>
+                                        <div class="col-sm">
+                                            <div class="progress" style="height: 6px;">
+                                                <div class="progress-bar" role="progressbar" style="width: 100%;"
+                                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-1">
+                                            <span>5.0</span>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center mb-2">
+                                        <div class="col-sm">Flexibility:</div>
+                                        <div class="col-sm">
+                                            <div class="progress" style="height: 6px;">
+                                                <div class="progress-bar" role="progressbar" style="width: 90%;"
+                                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-1">
+                                            <span>4.0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="offset-lg-1 col-lg-7 col-md-12 col-12 ">
+                            <div class="mb-5 mt-5 mt-lg-0">
+                                <form class="form-floating">
+                                    <input type="search" class="form-control" id="reviews" placeholder="Search Reviews">
+                                    <label for="reviews">Search</label>
+                                </form>
+                            </div>
+                            <div class="mb-4">
+                                <div class="d-md-flex align-items-center mb-3">
+                                    <img src="../assets/images/avatar/avatar-3.jpg" alt=""
+                                        class="avatar-md rounded-circle mb-3 mb-md-0">
+                                    <div class="d-flex align-items-start">
+                                        <div class="ms-md-3 ">
+                                            <h4 class="mb-0">James Duncan</h4>
+                                            <p class="fs-5 mb-0">December 2023</p>
+                                        </div>
+                                        <div class="ms-3 d-flex align-items-start">
+                                            <div class="text-primary fs-5 me-1 ">
+                                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="var(--rw-warning)" class="bi bi-star-fill"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                    </svg></span><span class="align-middle fw-semi-bold">4.95</span>
+                                            </div>
+                                            <div class="dropdown mt-n1">
+                                                <a href="#" class="fs-5" id="ratingDropdown" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-chevron-down"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                                    </svg>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-xl p-4 fs-5"
+                                                    aria-labelledby="ratingDropdown">
+                                                    <div class="row align-items-center mb-2 g-0">
+                                                        <div class="col-sm">Quality of service:</div>
+                                                        <div class="col-sm">
+                                                            <div class="progress" style="height: 6px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 80%;" aria-valuenow="80"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-1 ms-3">
+                                                            <span>4.8</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row align-items-center mb-2 g-0">
+                                                        <div class="col-sm">Value:</div>
+                                                        <div class="col-sm">
+                                                            <div class="progress" style="height: 6px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 90%;" aria-valuenow="90"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-1 ms-3">
+                                                            <span>4.0</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row align-items-center mb-2 g-0">
+                                                        <div class="col-sm">Professionalism:</div>
+                                                        <div class="col-sm">
+                                                            <div class="progress" style="height: 6px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 100%;" aria-valuenow="100"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-1 ms-3">
+                                                            <span>5.0</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row align-items-center mb-2 g-0">
+                                                        <div class="col-sm">Responsiveness:</div>
+                                                        <div class="col-sm">
+                                                            <div class="progress" style="height: 6px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 100%;" aria-valuenow="100"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-1 ms-3">
+                                                            <span>5.0</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row align-items-center g-0">
+                                                        <div class="col-sm">Flexibility:</div>
+                                                        <div class="col-sm">
+                                                            <div class="progress" style="height: 6px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 90%;" aria-valuenow="90"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-1 ms-3">
+                                                            <span>4.0</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>The place is too good, the staffwas very cooperative & responsive at any given
+                                    time. What I
+                                    appreciate the most is they arranged our stay in these times of crisis by doing
+                                    their best in all
+                                    manner. We are verygrateful to them for that.</p>
+                            </div>
+                            <div class="mb-3 bg-light p-4 rounded-3">
+                                <h5 class="fw-semi-bold">RealWed’s Reply </h5>
+                                <p class="mb-0">We really appreciate your honestyJames Duncan and glad to be a part
+                                    of your special
+                                    day!Happy Married Life!!!Thanks again, RealWed.</p>
+                            </div>
+                            <div class="mb-4 mt-6">
+                                <div class="d-md-flex align-items-center mb-3">
+                                    <img src="../assets/images/avatar/avatar-5.jpg" alt=""
+                                        class="avatar-md rounded-circle mb-3 mb-md-0">
+                                    <div class="d-flex align-items-start">
+                                        <div class="ms-md-3">
+                                            <h4 class="mb-0">Shraddha</h4>
+                                            <p class="fs-5 mb-0">December 2023</p>
+                                        </div>
+                                        <div class="ms-3 d-flex align-items-start">
+                                            <div class="text-primary fs-5 me-1 ">
+                                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="var(--rw-warning)" class="bi bi-star-fill"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                    </svg></span><span class="align-middle fw-semi-bold">4.95</span>
+                                            </div>
+                                            <div class="dropdown mt-n1">
+                                                <a href="#" class="fs-5" id="ratingDropdownSecond"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-chevron-down"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                                    </svg>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-xl p-4 fs-5"
+                                                    aria-labelledby="ratingDropdownSecond">
+                                                    <div class="row align-items-center mb-2 g-0">
+                                                        <div class="col-sm">Quality of service:</div>
+                                                        <div class="col-sm">
+                                                            <div class="progress" style="height: 6px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 80%;" aria-valuenow="80"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-1 ms-3">
+                                                            <span>4.8</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row align-items-center mb-2 g-0">
+                                                        <div class="col-sm">Value:</div>
+                                                        <div class="col-sm">
+                                                            <div class="progress" style="height: 6px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 90%;" aria-valuenow="90"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-1 ms-3">
+                                                            <span>4.0</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row align-items-center mb-2 g-0">
+                                                        <div class="col-sm">Professionalism:</div>
+                                                        <div class="col-sm">
+                                                            <div class="progress" style="height: 6px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 100%;" aria-valuenow="100"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-1 ms-3">
+                                                            <span>5.0</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row align-items-center mb-2 g-0">
+                                                        <div class="col-sm">Responsiveness:</div>
+                                                        <div class="col-sm">
+                                                            <div class="progress" style="height: 6px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 100%;" aria-valuenow="100"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-1 ms-3">
+                                                            <span>5.0</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row align-items-center g-0">
+                                                        <div class="col-sm">Flexibility:</div>
+                                                        <div class="col-sm">
+                                                            <div class="progress" style="height: 6px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 90%;" aria-valuenow="90"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-1 ms-3">
+                                                            <span>4.0</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>We thoroughly enjoyed our stay at this beautiful place. A verywell maintained
+                                    studio apartment.
+                                    Everything is just Amazing. Venue is very accommodating.</p>
+                            </div>
+                            <div class="mb-4 mt-6">
+                                <div class="d-md-flex align-items-center mb-3">
+                                    <img src="../assets/images/avatar/avatar-1.jpg" alt=""
+                                        class="avatar-md rounded-circle mb-3 mb-md-0">
+                                    <div class="d-flex align-items-start">
+                                        <div class="ms-md-3">
+                                            <h4 class="mb-0">Sahil Meda</h4>
+                                            <p class="fs-5 mb-0">December 2023</p>
+                                        </div>
+                                        <div class="ms-3 d-flex align-items-start">
+                                            <div class="text-primary fs-5 me-1 ">
+                                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="var(--rw-warning)" class="bi bi-star-fill"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                    </svg></span><span class="align-middle fw-semi-bold">4.95</span>
+                                            </div>
+                                            <div class="dropdown mt-n1">
+                                                <a href="#" class="fs-5" id="ratingDropdownThird"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-chevron-down"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                                    </svg>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-xl p-4 fs-5"
+                                                    aria-labelledby="ratingDropdownThird">
+                                                    <div class="row align-items-center mb-2 g-0">
+                                                        <div class="col-sm">Quality of service:</div>
+                                                        <div class="col-sm">
+                                                            <div class="progress" style="height: 6px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 80%;" aria-valuenow="80"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-1 ms-3">
+                                                            <span>4.8</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row align-items-center mb-2 g-0">
+                                                        <div class="col-sm">Value:</div>
+                                                        <div class="col-sm">
+                                                            <div class="progress" style="height: 6px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 90%;" aria-valuenow="90"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-1 ms-3">
+                                                            <span>4.0</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row align-items-center mb-2 g-0">
+                                                        <div class="col-sm">Professionalism:</div>
+                                                        <div class="col-sm">
+                                                            <div class="progress" style="height: 6px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 100%;" aria-valuenow="100"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-1 ms-3">
+                                                            <span>5.0</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row align-items-center mb-2 g-0">
+                                                        <div class="col-sm">Responsiveness:</div>
+                                                        <div class="col-sm">
+                                                            <div class="progress" style="height: 6px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 100%;" aria-valuenow="100"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-1 ms-3">
+                                                            <span>5.0</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row align-items-center g-0">
+                                                        <div class="col-sm">Flexibility:</div>
+                                                        <div class="col-sm">
+                                                            <div class="progress" style="height: 6px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 90%;" aria-valuenow="90"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-1 ms-3">
+                                                            <span>4.0</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>In porttitor sodales tempus. Integer pharetra turpis et eros accumsan fringilla.
+                                    Sed consectetur
+                                    lobortis accumsan. Suspendisse pellentesque dolor pellentesque lacus rutrum
+                                    efficitur.</p>
+                            </div>
+                            <div class="mb-4 mt-6">
+                                <div class="d-md-flex align-items-center mb-3">
+                                    <img src="../assets/images/avatar/avatar-6.jpg" alt=""
+                                        class="avatar-md rounded-circle mb-3 mb-md-0">
+                                    <div class="d-flex align-items-start">
+                                        <div class="ms-md-3">
+                                            <h4 class="mb-0">Sameera Badami</h4>
+                                            <p class="fs-5 mb-0">December 2023</p>
+                                        </div>
+                                        <div class="ms-3 d-flex align-items-start">
+                                            <div class="text-primary fs-5 me-1 ">
+                                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="var(--rw-warning)" class="bi bi-star-fill"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                    </svg></span><span class="align-middle fw-semi-bold">4.95</span>
+                                            </div>
+                                            <div class="dropdown mt-n1">
+                                                <a href="#" class="fs-5" id="ratingDropdownFourth"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-chevron-down"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                                    </svg>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-xl p-4 fs-5"
+                                                    aria-labelledby="ratingDropdownFourth">
+                                                    <div class="row align-items-center mb-2 g-0">
+                                                        <div class="col-sm">Quality of service:</div>
+                                                        <div class="col-sm">
+                                                            <div class="progress" style="height: 6px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 80%;" aria-valuenow="80"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-1 ms-3">
+                                                            <span>4.8</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row align-items-center mb-2 g-0">
+                                                        <div class="col-sm">Value:</div>
+                                                        <div class="col-sm">
+                                                            <div class="progress" style="height: 6px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 90%;" aria-valuenow="90"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-1 ms-3">
+                                                            <span>4.0</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row align-items-center mb-2 g-0">
+                                                        <div class="col-sm">Professionalism:</div>
+                                                        <div class="col-sm">
+                                                            <div class="progress" style="height: 6px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 100%;" aria-valuenow="100"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-1 ms-3">
+                                                            <span>5.0</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row align-items-center mb-2 g-0">
+                                                        <div class="col-sm">Responsiveness:</div>
+                                                        <div class="col-sm">
+                                                            <div class="progress" style="height: 6px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 100%;" aria-valuenow="100"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-1 ms-3">
+                                                            <span>5.0</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row align-items-center g-0">
+                                                        <div class="col-sm">Flexibility:</div>
+                                                        <div class="col-sm">
+                                                            <div class="progress" style="height: 6px;">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 90%;" aria-valuenow="90"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-1 ms-3">
+                                                            <span>4.0</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>Phasellus id dui eu velit elementum convallis. Donec in lectus vel turpis tempor
+                                    pellentesque at in
+                                    erat. Proin viverra volutpat porta. Integer sed neque blandit, lacinia sem sed,
+                                    feugiat magna.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- scripts -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+    integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+    integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Libs JS -->
+    <!-- Owl Carousel JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- <script src="./assets/libs/jquery/dist/jquery.min.js"></script> -->
+    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/flatpickr/dist/flatpickr.min.js"></script>
+    <!-- JS (optional, only needed for licensing if required) -->
+    <script src="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons@3.3.1/license.min.js"></script>
+
+
+ 
+
+
+ <script src="assets/js/gSap.js"></script>
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper-5", {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            freeMode: true,
+            loop: true,
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                576: {
+                    slidesPerView: 4,
+                },
+                768: {
+                    slidesPerView: 3,
+                },
+                992: {
+                    slidesPerView: 6,
+                },
+            },
+            // autoplay: {
+            //   delay: 2000,
+            // },
+        });
+
+        var swiper = new Swiper(".vlogMySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            freeMode: true,
+            loop: true,
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                576: {
+                    slidesPerView: 2,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                992: {
+                    slidesPerView: 3,
+                },
+            },
+            // autoplay: {
+            //   delay: 2000,
+            // },
+        });
+    </script>
+
+</body>
+
+
+</html>
