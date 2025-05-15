@@ -24,135 +24,137 @@
 
   <link rel="stylesheet" href="assets/libs/magnific-popup/dist/magnific-popup.css">
   <title>Listing Single - Wedding Listing and Directory Template - RealWed</title>
-
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&display=swap');
+  </style>
 
   <style>
     .cont {
-  display: grid;
-  place-items: center;
-  min-height: 180px;
-  -webkit-mask-box-image: -webkit-linear-gradient(
-    top, transparent, transparent 0, white 10%, white 80%, transparent 100%);
-}
+      display: grid;
+      place-items: center;
+      min-height: 180px;
+      -webkit-mask-box-image: -webkit-linear-gradient(top, transparent, transparent 0, white 10%, white 80%, transparent 100%);
+    }
 
 
-.cards {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
+    .cards {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
 
-.card-text {
-  background-color: blue;
-}
+    .card-text {
+      background-color: blue;
+    }
 
-.cards .card {
+    .cards .card {
 
-  position: absolute;
-  display: grid;
-  grid-template-columns: 70px 1fr;
-  gap: 10px;
-  padding: 1.5rem;
-  opacity: 0;
-  background: #fff;
-  max-width: 30rem;
-  border-radius: 0.5rem;
-  pointer-events: none;
-  animation: slideUp 15s infinite;
-}
+      position: absolute;
+      display: grid;
+      grid-template-columns: 70px 1fr;
+      gap: 10px;
+      padding: 1.5rem;
+      opacity: 0;
+      background: #fff;
+      max-width: 30rem;
+      border-radius: 0.5rem;
+      pointer-events: none;
+      animation: slideUp 15s infinite;
+    }
 
-.cards .card:nth-child(1) {
-  animation-delay: -3s;
-}
+    .cards .card:nth-child(1) {
+      animation-delay: -3s;
+    }
 
-.cards .card:nth-child(2) {
-  animation-delay: 0s;
-}
+    .cards .card:nth-child(2) {
+      animation-delay: 0s;
+    }
 
-.cards .card:nth-child(3) {
-  animation-delay: 3s;
-}
+    .cards .card:nth-child(3) {
+      animation-delay: 3s;
+    }
 
-.cards .card:nth-child(4) {
-  animation-delay: 6s;
-}
+    .cards .card:nth-child(4) {
+      animation-delay: 6s;
+    }
 
-.cards .card:nth-child(5) {
-  animation-delay: 9s;
-}
+    .cards .card:nth-child(5) {
+      animation-delay: 9s;
+    }
 
-.cards .card:nth-child(6) {
-  animation-delay: 12s;
-}
+    .cards .card:nth-child(6) {
+      animation-delay: 12s;
+    }
 
-.cards .card:nth-child(7) {
-  animation-delay: 15s;
-}
+    .cards .card:nth-child(7) {
+      animation-delay: 15s;
+    }
 
-.cards .card:nth-child(8) {
-  animation-delay: 18s;
-}
+    .cards .card:nth-child(8) {
+      animation-delay: 18s;
+    }
 
-.cards .card:nth-child(9) {
-  animation-delay: 21s;
-}
+    .cards .card:nth-child(9) {
+      animation-delay: 21s;
+    }
 
-.cards .card:nth-child(10) {
-  animation-delay: 24s;
-}
+    .cards .card:nth-child(10) {
+      animation-delay: 24s;
+    }
 
-.cards .card:nth-child(11) {
-  animation-delay: 27s;
-}
+    .cards .card:nth-child(11) {
+      animation-delay: 27s;
+    }
 
-.cards .card:nth-child(12) {
-  animation-delay: 30s;
-}
+    .cards .card:nth-child(12) {
+      animation-delay: 30s;
+    }
 
-.cards .card:nth-child(13) {
-  animation-delay: 33s;
-  /* Repeat from 1 after the 10th card */
-}
+    .cards .card:nth-child(13) {
+      animation-delay: 33s;
+      /* Repeat from 1 after the 10th card */
+    }
 
-.cards .card:nth-child(14) {
-  animation-delay: 36s;
-  /* Repeat from 2 after the 11th card */
-}
+    .cards .card:nth-child(14) {
+      animation-delay: 36s;
+      /* Repeat from 2 after the 11th card */
+    }
 
-/* Continue this pattern for more cards */
+    /* Continue this pattern for more cards */
 
-@keyframes slideUp {
-  0% {
-    transform: translateY(100%) scale(0.5);
-    opacity: 0;
-  }
+    @keyframes slideUp {
+      0% {
+        transform: translateY(100%) scale(0.5);
+        opacity: 0;
+      }
 
-  5%,
-  20% {
-    transform: translateY(100%) scale(0.7);
-    opacity: 0.4;
-  }
+      5%,
+      20% {
+        transform: translateY(100%) scale(0.7);
+        opacity: 0.4;
+      }
 
-  25%,
-  40% {
-    transform: translateY(0) scale(1);
-    opacity: 1;
-  }
+      25%,
+      40% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
 
-  45%,
-  60% {
-    transform: translateY(-100%) scale(0.7);
-    opacity: 0.4;
-  }
+      45%,
+      60% {
+        transform: translateY(-100%) scale(0.7);
+        opacity: 0.4;
+      }
 
-  65%,
-  100% {
-    transform: translateY(-100%) scale(0.5);
-    opacity: 0;
-  }
-}
+      65%,
+      100% {
+        transform: translateY(-100%) scale(0.5);
+        opacity: 0;
+      }
+    }
   </style>
 </head>
 
@@ -229,7 +231,8 @@
               <div class="p-3 p-lg-0">
 
                 <!-- <a href="pages/signin.html" class="btn btn-secondary shadow-sm">Sign in</a> -->
-                <a href="#" class="btn btn2 style1 rounded">Get Started Now</a>
+                <a href="#" class="btn btn2 style1 rounded" data-bs-toggle="modal" data-bs-target="#favouriteIcon">Get
+                  Started Now</a>
 
 
 
@@ -387,61 +390,61 @@
     <!--About Two End-->
 
 
-      <!--Leading Start-->
-        <section class="leading">
-            <div class="leading-bg-box">
-                <div class="leading-bg jarallax" data-jarallax data-speed="0.2" data-imgPosition="50% 0%" ></div>
+    <!--Leading Start-->
+    <section class="leading">
+      <div class="leading-bg-box">
+        <div class="leading-bg jarallax" data-jarallax data-speed="0.2" data-imgPosition="50% 0%"></div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-7 col-lg-6">
+            <div class="leading__left">
+
+              <h3 class="leading__title" style="text-align: start;"> Facilities <br>Offered by <br> The Imperial.</h3>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-7 col-lg-6">
-                        <div class="leading__left">
-                             
-                            <h3 class="leading__title" style="text-align: start;"> Facilities <br>Offered by <br> The Imperial.</h3>
-                        </div>
-                    </div>
-                    <div class="col-xl-5 col-lg-6">
-                        <div class="leading__right">
-                            <ul class="list-unstyled leading__points">
-                                <li>
-                                    <div class="icon">
-                                        <span class="fa fa-check"></span>
-                                    </div>
-                                    <div class="text">
-                                        <p>We’re expert & certified designers</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="icon">
-                                        <span class="fa fa-check"></span>
-                                    </div>
-                                    <div class="text">
-                                        <p>We use only quality materials</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="icon">
-                                        <span class="fa fa-check"></span>
-                                    </div>
-                                    <div class="text">
-                                        <p>We care about our customers</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="icon">
-                                        <span class="fa fa-check"></span>
-                                    </div>
-                                    <div class="text">
-                                        <p>Smart & unique wall designs</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="col-xl-5 col-lg-6">
+            <div class="leading__right">
+              <ul class="list-unstyled leading__points">
+                <li>
+                  <div class="icon">
+                    <span class="fa fa-check"></span>
+                  </div>
+                  <div class="text">
+                    <p>We’re expert & certified designers</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <span class="fa fa-check"></span>
+                  </div>
+                  <div class="text">
+                    <p>We use only quality materials</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <span class="fa fa-check"></span>
+                  </div>
+                  <div class="text">
+                    <p>We care about our customers</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <span class="fa fa-check"></span>
+                  </div>
+                  <div class="text">
+                    <p>Smart & unique wall designs</p>
+                  </div>
+                </li>
+              </ul>
             </div>
-        </section>
-        <!--Leading End-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Leading End-->
 
 
     <!-- Projects One Start -->
@@ -468,12 +471,13 @@
                     </a>
 
                   </div>
-                   
+
                   <div class="projects-one__content">
                     <div class="projects-one__content-shape-1 "
                       style="background-image: url(assets/images/shapes/projects-one-content-shape-1.png);">
                     </div>
-                    <h4 class="projects-one__title"><a href="../assets/images/gallery-img/gallery-img-1.jpg" class="img-popup">Neoclassical
+                    <h4 class="projects-one__title"><a href="../assets/images/gallery-img/gallery-img-1.jpg"
+                        class="img-popup">Neoclassical
                         Sofa</a></h4>
                     <p class="projects-one__sub-title">Interior Design</p>
                   </div>
@@ -637,7 +641,7 @@
                 </form>
               </div>
             </div>
-            
+
           </div>
         </div>
       </div>
@@ -645,14 +649,15 @@
 
 
 
-   
+
 
     <!-- similar -->
     <section class="pb-6">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 col-12 mb-5">
-            <h2 class="mb-0">Similar Listings</h2>
+          <div class="col-md-12 col-12 mb-5 text-center ">
+            <img src="assets/images/wedding arrow.png" alt="">
+            <h2 class="mb-0 ">Similar Listings</h2>
           </div>
           <!-- col -->
           <div class="col-lg-4 col-md-6 col-12">
@@ -898,7 +903,7 @@
   </main>
   <!-- footer -->
   <!-- footer -->
- <footer class="pt-12 pb-0">
+  <footer class="pt-12 pb-0">
     <div class="container">
       <div class="row">
         <!-- col -->
@@ -906,9 +911,9 @@
           <!-- para -->
           <div class="mb-4 mb-lg-0 content">
 
-            <a class="navbar-brand fs-2" href="index-2.html">
+            <a class="navbar-brand fs-2 Cinzel-f" href="index-2.html">
 
-              <span style="color: red;">Ban</span>Quet
+              <span style="color: orange; font-weight: 600; ">Ban</span>Quet
 
             </a>
 

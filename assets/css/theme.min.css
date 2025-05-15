@@ -45484,7 +45484,7 @@ footer .content {
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #eae8e8;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -48572,3 +48572,6 @@ body {
   border-radius: 30px;
   overflow: hidden;
 }
+
+/* preloader */
+
