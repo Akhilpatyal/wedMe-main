@@ -33,7 +33,7 @@ gsap.to(".char", {
  
 heading();
 
-
+// cursor magnet
 var magnets = document.querySelectorAll('.gsap-magnetic')
 var strength = 50
 
@@ -60,3 +60,5 @@ var strength = 50
 window.gsap.registerPlugin(
 	window.TweenMax
 );
+
+

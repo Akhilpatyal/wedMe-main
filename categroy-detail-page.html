@@ -1,41 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
+  <link rel="stylesheet" href="assets/libs/leaflet/dist/leaflet.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <!-- Libs -->
   <link rel="stylesheet" href="assets/libs/bootstrap-icons/font/bootstrap-icons.css">
   <link rel="stylesheet" href="assets/fonts/wedding-icon-font/flaticon.css">
   <link rel="stylesheet" href="assets/fonts/fontello/css/fontello.css">
 
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&display=swap');
-  </style>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&display=swap');
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 
   <!-- Theme CSS -->
   <link rel="stylesheet" href="assets/css/theme.min.css">
-  <title>Contact Page - Wedding  Banquet</title>
 
+  <link rel="stylesheet" href="assets/libs/magnific-popup/dist/magnific-popup.css">
+  <title>Detail Page - Wedding Listing and Directory Template - RealWed</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&display=swap');
+  </style>
+
+  <style>
+    .cont {
+      display: grid;
+      place-items: center;
+      min-height: 180px;
+      -webkit-mask-box-image: -webkit-linear-gradient(top, transparent, transparent 0, white 10%, white 80%, transparent 100%);
+    }
+
+
+    .cards {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .card-text {
+      background-color: blue;
+    }
+
+    .cards .card {
+
+      position: absolute;
+      display: grid;
+      grid-template-columns: 70px 1fr;
+      gap: 10px;
+      padding: 1.5rem;
+      opacity: 0;
+      background: #fff;
+      max-width: 30rem;
+      border-radius: 0.5rem;
+      pointer-events: none;
+      animation: slideUp 15s infinite;
+    }
+
+    .cards .card:nth-child(1) {
+      animation-delay: -3s;
+    }
+
+    .cards .card:nth-child(2) {
+      animation-delay: 0s;
+    }
+
+    .cards .card:nth-child(3) {
+      animation-delay: 3s;
+    }
+
+    .cards .card:nth-child(4) {
+      animation-delay: 6s;
+    }
+
+    .cards .card:nth-child(5) {
+      animation-delay: 9s;
+    }
+
+    .cards .card:nth-child(6) {
+      animation-delay: 12s;
+    }
+
+    .cards .card:nth-child(7) {
+      animation-delay: 15s;
+    }
+
+    .cards .card:nth-child(8) {
+      animation-delay: 18s;
+    }
+
+    .cards .card:nth-child(9) {
+      animation-delay: 21s;
+    }
+
+    .cards .card:nth-child(10) {
+      animation-delay: 24s;
+    }
+
+    .cards .card:nth-child(11) {
+      animation-delay: 27s;
+    }
+
+    .cards .card:nth-child(12) {
+      animation-delay: 30s;
+    }
+
+    .cards .card:nth-child(13) {
+      animation-delay: 33s;
+      /* Repeat from 1 after the 10th card */
+    }
+
+    .cards .card:nth-child(14) {
+      animation-delay: 36s;
+      /* Repeat from 2 after the 11th card */
+    }
+
+    /* Continue this pattern for more cards */
+
+    @keyframes slideUp {
+      0% {
+        transform: translateY(100%) scale(0.5);
+        opacity: 0;
+      }
+
+      5%,
+      20% {
+        transform: translateY(100%) scale(0.7);
+        opacity: 0.4;
+      }
+
+      25%,
+      40% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+
+      45%,
+      60% {
+        transform: translateY(-100%) scale(0.7);
+        opacity: 0.4;
+      }
+
+      65%,
+      100% {
+        transform: translateY(-100%) scale(0.5);
+        opacity: 0;
+      }
+    }
+  </style>
 </head>
 
 <body>
-
- 
-    <div class="mouse-follower">
-        <span class="cursor-outline"></span>
-        <span class="cursor-dot"></span>
-    </div>
-
+  
+  <div class="dot"></div>
+  <div class="cursor-outline"></div>
 
   <!-- navbar -->
   <div class="navbar-transparent navbar-position">
@@ -121,286 +247,798 @@
     </div>
   </div>
   <main>
-    <!-- pageheader -->
-    <section class="pt-lg-21 pt-10 overlay-section-3 position-relative jarallax" data-jarallax data-speed="0.5">
-      <div class="jarallax-img" style="background-image: url('./assets/images/banner/banner7.png');">
-      </div>
-      <div class="container position-relative">
+
+    <section class="pt-lg-21 pt-10 overlay-section-3 "
+      style="background: url(assets/images/blog/blog12.png) no-repeat; background-size: cover; background-position: center center;">
+
+      <div class="container">
         <div class="row justify-content-center pb-lg-17 pb-5 ">
           <!-- hero captions -->
           <div class="col-lg-9 col-md-12">
             <div class="text-white text-center">
-              <h1 class="display-3 fw-bold text-white Cinzel-f" id="heading">Contact</h1>
-              <p class="lead mb-0 parata-f">Browse the best wedding vendors in your area — from venues and
-                photographers, to wedding planners, caterers, florists and more.</p>
+              <h1 class="display-3 fw-bold text-white parata-f" id="heading">The Imperial</h1>
+              <p class="lead mb-0 parata-f">Experience Royal Elegance in the Heart of the City</p>
             </div>
             <div class="text-white text-center pt-2">
 
-              <p>Home / Blogs</p>
+              <p>Home / Hotel</p>
             </div>
 
           </div>
         </div>
       </div>
     </section>
-    <!-- pageheader-->
 
-
-    <!-- form start -->
-    <section class="pt-5 pb-14">
+    <!-- About us Start -->
+    <section class="Photographer-section-2 section-bg-4 fix">
       <div class="container">
+        <div class="row g-0">
+          <div class="col-xl-4 col-lg-4 col-md-4">
+            <div class="Photographer-mentor d-none d-sm-block">
+              <div class="Photographer-img wow fadeInLeft" data-wow-delay=".1s">
+                <img src="assets/images/01.jpg" alt="Photographer-img" class="d-none d-sm-block">
+                 
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-8 col-lg-8 col-md-8">
+            <div class="Photographer-wrapper" style="background-color: #F7E7CE;">
+              <div class="section-title">
+                <span class="wow fadeInUp" data-wow-delay=".1s">About us</span>
+                <h2 class="wow fadeInUp" data-wow-delay=".3s">We Inspire You To Bring Your Wedding In Real Life</h2>
+                <p class="wow fadeInUp" data-wow-delay=".1s">
+                  The Banyan Retreat is a famous and reputed wedding venue located in Ramnagar, Jim Corbett. This
+                  magnificent venue offers both indoor and outdoor spacing facilities for guests that can accommodate
+                  large gatherings. Rooms are also available for the outstation guests to stay and get ready. The venue
+                  has been hosting several events since 2019 and developed a firm name in the industry. The team is also
+                  talented and skilled in providing a wide range of services for all guests.
+                </p>
+              </div>
+              <div class="Photographer-inner wow fadeInUp" data-wow-delay=".3s">
+                <div class="Profession-Photographer">
+                  <div class="icon">
+                    <img src="assets/images/icon/icon6.svg" alt="icon">
+                  </div>
+                  <div class="content mt-5">
+                    <h3>Creative & Profession Editing</h3>
+                    <p>There are many variations of passag<br>alteration in some form,
+                    </p>
+                  </div>
+                </div>
+                <div class="Profession-Photographer">
+                  <div class="icon">
+                    <img src="assets/images/icon/icon7.svg" alt="icon">
+                  </div>
+                  <div class="content mt-5">
+                    <h3>Creative & Profession Editing</h3>
+                    <p>There are many variations of passag<br>alteration in some form,
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Photographer Section End -->
 
-        <div class="mb-6 text-center " style="margin: 0px 8px;">
-          <h2 class="mb-0  Cinzel-f" style="font-size: 52px;">Help us to respond to
-            you more quickly</h2>
+    <!--Why US?-->
+    <section class="about-two">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6">
+            <div class="about-two__left">
+              <div class="section-title text-left">
+                <span class="section-title__tagline parata-f">Why Choose The Imperial?</span>
+                <h2 class="section-title__title">We Make Difference in Your Homes</h2>
+                <div class="section-title__line"></div>
+              </div>
+              <p class="about-two__text-1">We have 30+ years of experiences for give
+                you better quality results.</p>
+              <p class="about-two__text-2">Lorem ipsum dolor sit amet, consectetur notted adipisicing elit
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua lonm andhn.</p>
+              <div class="about-two__points-box">
+                <div class="about-two__points-left">
+                  <ul class="list-unstyled about-two__points">
+                    <li>
+                      <div class="icon">
+                        <span class="icon-confirmation"></span>
+                      </div>
+                      <div class="text">
+                        <p>Quality Material</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <p class="about-two__points-text">Lorem ipsum dolor sit ame ed <br> consectetur nod.
+                  </p>
+                </div>
+                <div class="about-two__points-right">
+                  <ul class="list-unstyled about-two__points">
+                    <li>
+                      <div class="icon">
+                        <span class="icon-confirmation"></span>
+                      </div>
+                      <div class="text">
+                        <p>Unique Walls</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <p class="about-two__points-text">Lorem ipsum dolor sit ame ed <br> consectetur nod.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <div class="about-two__right">
+              <div class="about-two__img-box wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms">
+                <div class="about-two__img-1">
+                  <img src="assets/images/about-two-img-1.jpg" alt="">
+                </div>
+                <div class="about-two__img-2">
+                  <img src="assets/images/about-two-img-2.jpg" alt="">
+                </div>
+                <div class="about-two__dot">
+                  <img src="assets/images/about-two-dots.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--About Two End-->
+
+
+    <!--Leading Start-->
+    <section class="leading">
+      <div class="leading-bg-box">
+        <div class="leading-bg jarallax" data-jarallax data-speed="0.2" data-imgPosition="50% 0%"></div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-7 col-lg-6">
+            <div class="leading__left">
+
+              <h3 class="leading__title" style="text-align: start;"> Facilities <br>Offered by <br> The Imperial.</h3>
+            </div>
+          </div>
+          <div class="col-xl-5 col-lg-6">
+            <div class="leading__right">
+              <ul class="list-unstyled leading__points">
+                <li>
+                  <div class="icon">
+                    <span class="fa fa-check"></span>
+                  </div>
+                  <div class="text">
+                    <p>We’re expert & certified designers</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <span class="fa fa-check"></span>
+                  </div>
+                  <div class="text">
+                    <p>We use only quality materials</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <span class="fa fa-check"></span>
+                  </div>
+                  <div class="text">
+                    <p>We care about our customers</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <span class="fa fa-check"></span>
+                  </div>
+                  <div class="text">
+                    <p>Smart & unique wall designs</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Leading End-->
+
+
+    <!-- Projects One Start -->
+
+
+    <section class="py-lg-5 py-5">
+      <div class="container">
+        <div class="row mb-6 ">
+          <!-- caption -->
+          <div class="col-md-12 col-12 text-center ">
+            <img src="assets/images/wedding arrow.png" alt="">
+            <h2 class="mb-0 fs-1">Our Gallery</h2>
+          </div>
+
+        </div>
+        <div class="swiper vlogMySwiper gallery">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="projects-one__single">
+                <div class="projects-one__img-box">
+                  <div class="galleryImg position-relative projects-one__img">
+                    <a href="assets/images/cards/card1.png" title="Foto 1" class="rounded-3">
+                      <img src="assets/images/cards/card1.png" alt="Foto 1" class="w-100 rounded-3">
+                    </a>
+
+                  </div>
+
+                  <div class="projects-one__content">
+                    <div class="projects-one__content-shape-1 "
+                      style="background-image: url(assets/images/shapes/projects-one-content-shape-1.png);">
+                    </div>
+                    <h4 class="projects-one__title"><a href="assets/images/cards/card1.png"
+                        class="img-popup">Neoclassical
+                        Sofa</a></h4>
+                    <p class="projects-one__sub-title">Interior Design</p>
+                  </div>
+                  <div class="projects-one__arrow">
+                    <a href="assets/images/cards/card1.png" class="img-popup"><span
+                        class="icon-up-right-arrow-1"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="projects-one__single">
+                <div class="projects-one__img-box">
+                  <div class="galleryImg position-relative projects-one__img">
+                    <a href="assets/images/cards/card2.png" title="Foto 1" class="rounded-3">
+                      <img src="assets/images/cards/card2.png" alt="Foto 1" class="w-100 rounded-3">
+                    </a>
+
+                  </div>
+                  <div class="projects-one__content">
+                    <div class="projects-one__content-shape-1"
+                      style="background-image: url(assets/images/shapes/projects-one-content-shape-1.png);">
+                    </div>
+                    <h4 class="projects-one__title"><a href="project-details.html">Neoclassical
+                        Sofa</a></h4>
+                    <p class="projects-one__sub-title">Interior Design</p>
+                  </div>
+                  <div class="projects-one__arrow">
+                    <a href="assets/images/cards/card2.png" class="img-popup"><span
+                        class="icon-up-right-arrow-1"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="projects-one__single">
+                <div class="projects-one__img-box">
+                  <div class="galleryImg position-relative projects-one__img">
+                    <a href="assets/images/cards/card3.png" title="Foto 1" class="rounded-3">
+                      <img src="assets/images/cards/card3.png" alt="Foto 1" class="w-100 rounded-3">
+                    </a>
+
+                  </div>
+                  <div class="projects-one__content">
+                    <div class="projects-one__content-shape-1"
+                      style="background-image: url(assets/images/shapes/projects-one-content-shape-1.png);">
+                    </div>
+                    <h4 class="projects-one__title"><a href="project-details.html">Neoclassical
+                        Sofa</a></h4>
+                    <p class="projects-one__sub-title">Interior Design</p>
+                  </div>
+                  <div class="projects-one__arrow">
+                    <a href="assets/images/cards/card3.png" class="img-popup"><span
+                        class="icon-up-right-arrow-1"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="projects-one__single">
+                <div class="projects-one__img-box">
+                  <div class="galleryImg position-relative projects-one__img">
+                    <a href="assets/images/cards/card4.png" title="Foto 1" class="rounded-3">
+                      <img src="assets/images/cards/card4.png" alt="Foto 1" class="w-100 rounded-3">
+                    </a>
+
+                  </div>
+                  <div class="projects-one__content">
+                    <div class="projects-one__content-shape-1"
+                      style="background-image: url(assets/images/shapes/projects-one-content-shape-1.png);">
+                    </div>
+                    <h4 class="projects-one__title"><a href="project-details.html">Neoclassical
+                        Sofa</a></h4>
+                    <p class="projects-one__sub-title">Interior Design</p>
+                  </div>
+                  <div class="projects-one__arrow">
+                    <a href="assets/images/cards/card4.png" class="img-popup"><span
+                        class="icon-up-right-arrow-1"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
         </div>
 
+
+      </div>
+    </section>
+
+    <!-- Projects One End -->
+
+
+    <!-- Map & Contact -->
+    <section class="pb-8">
+      <div class="container">
         <div class="row">
-          <div class="col-md-6">
-            <form class="needs-validation pt-4" novalidate>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="First name" aria-label="First name" required>
+          <div class="col-lg-8 col-md-7 col-12">
+
+            <div class="mb-6 border-bottom pb-6">
+              <!-- map -->
+              <h2 class="mb-1">Map</h2>
+              <p class="mb-5">74, Usha Apartments, Manpreet Nagar Jamnagar - 146296</p>
+              <div id="listing_map" class="map rounded-3">
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-4 col-md-5 col-12">
+            <!-- card -->
+            <div class="card mb-4" style="background-color: #f7e7ce;">
+              <div class="card-body p-4">
+                <h3 class="mb-3">Message to vendor</h3>
+                <!-- form -->
+                <form class="needs-validation" novalidate>
+                  <!-- name -->
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="vendorname" placeholder="Write Name" required>
+                    <label for="vendorname" class="form-label">Your Name</label>
                     <div class="invalid-feedback">
                       Please enter first name.
                     </div>
                   </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" required>
-                    <div class="invalid-feedback">
-                      Please enter last name.
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <div class="mb-3">
-                    <input type="email" class="form-control" placeholder="Email" aria-label="email" required>
+                  <!-- email -->
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="vendoremail" placeholder="Email address" required>
+                    <label for="vendoremail" class="form-label">Email</label>
                     <div class="invalid-feedback">
                       Please enter email.
                     </div>
                   </div>
-                </div>
-                <div class="col-md-12">
-                  <div class="mb-3">
-                    <input type="number" class="form-control" placeholder="Phone" aria-label="Phone" required>
-                    <div class="invalid-feedback">
-                      Please enter phone.
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <div class="mb-3">
-                    <label for="contact" class="form-label visually-hidden">State</label>
-                    <select class="form-select" id="contact" required>
-                      <option selected disabled value="">Choose...</option>
-                      <option>Vendor Purpose</option>
-                      <option value="Couple">Couple</option>
-                      <option value="Pricing">Pricing</option>
-                      <option value="Vendor">Vendor</option>
-                      <option value="Advertise with us">Advertise with us</option>
-                    </select>
-                    <div class="invalid-feedback">
-                      Please choose vendor.
-                    </div>
-                  </div>
-                </div>
-                <div class="mb-3">
+                  <!-- wedding date -->
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control flatpickr" id="selectdate" placeholder="Select vendor">
+                    <label for="selectdate" class="form-label">Wedding Date</label>
 
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"
-                    required></textarea>
-                  <div class="invalid-feedback">
-                    Please write message.
                   </div>
-                </div>
-                <div class="col-md-12">
-                  <button class="btn btn2 style1 rounded " type="submit"> Submit</button>
-                </div>
+                  <!-- descriptions -->
+                  <div class="form-floating mb-3">
+
+                    <textarea class="form-control" id="floatingTextarea" placeholder="Write your message"
+                      style="height: 100px" required></textarea>
+                    <label for="floatingTextarea" class="form-label">Textarea</label>
+                    <div class="invalid-feedback">
+                      Please enter a message in the textarea.
+                    </div>
+
+                  </div>
+                  <!-- text -->
+                  <div class="mb-3">
+                    <p class="fs-5 lh-2">Byclicking'Request pricing', I agree to RealWed <a href="#">Privacy
+                        Policy</a> and <a href="#">Terms of Use</a></p>
+
+                  </div>
+                  <!-- button -->
+                  <div class="d-grid">
+                    <button type="submit" class="btn btn2 style1">Request Pricing</button>
+                  </div>
+                </form>
               </div>
-            </form>
-          </div>
-          <div class="col-md-6">
-            <div class="map_bind  ">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d471220.5631094339!2d88.04952462217592!3d22.6757520733225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1596988408134!5m2!1sen!2sin"
-                width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0"></iframe>
             </div>
+
           </div>
         </div>
       </div>
     </section>
-    <!-- form close -->
-    <!-- customer start -->
-    <!-- Cards start-->
-    <section class="pb-10">
+
+
+
+
+
+    <!-- similar -->
+    <section class="pb-6">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 col-md-6 pb-2">
-            <div class="card4">
-              <span class="icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
-                  stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M12 21C12 21 5 13.5 5 8.5C5 5.18629 7.68629 2.5 11 2.5C14.3137 2.5 17 5.18629 17 8.5C17 13.5 12 21 12 21Z" />
-                  <circle cx="12" cy="8.5" r="1.5" />
-                </svg>
-
-
-              </span>
-              <h4>Our Address</h4>
-              <p>
-                Our offices are located in the Georgia.
-              </p>
-              <p>
-                Address: 4998 Elk Creek Road Canton, GA 28114
-              </p>
-
-              <div class="shine"></div>
-              <div class="background">
-                <div class="tiles">
-                  <div class="tile tile-1"></div>
-                  <div class="tile tile-2"></div>
-                  <div class="tile tile-3"></div>
-                  <div class="tile tile-4"></div>
-
-                  <div class="tile tile-5"></div>
-                  <div class="tile tile-6"></div>
-                  <div class="tile tile-7"></div>
-                  <div class="tile tile-8"></div>
-
-                  <div class="tile tile-9"></div>
-                  <div class="tile tile-10"></div>
+          <div class="col-md-12 col-12 mb-5 text-center ">
+            <img src="assets/images/wedding arrow.png" alt="">
+            <h2 class="mb-0 ">Similar Listings</h2>
+          </div>
+          <!-- col -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="mb-6">
+              <!-- img -->
+              <div class="position-relative">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                      class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                      aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                      aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="../assets/images/blog/wc-img-1.jpg" class="d-block w-100 rounded" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../assets/images/blog/wc-img-2.jpg" class="d-block w-100 rounded" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../assets/images/blog/wc-img-3.jpg" class="d-block w-100 rounded" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
-
-                <div class="line line-1"></div>
-                <div class="line line-2"></div>
-                <div class="line line-3"></div>
+                <!-- badge -->
+                <div class="position-absolute top-0 ps-2 pt-2">
+                  <span class="badge bg-primary">Featured</span>
+                </div>
+                <!-- like -->
+                <div class="position-absolute top-0 pe-2 pt-2 end-0 z-1">
+                  <a href="#" class="text-white text-hover-primary" data-bs-toggle="modal"
+                    data-bs-target="#favouriteIcon">
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-heart" viewBox="0 0 16 16">
+                        <path
+                          d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                      </svg>
+                    </span></a>
+                </div>
+              </div>
+              <!-- content -->
+              <div class="mt-3">
+                <h3 class="mb-0"><a href="#" class="text-inherit">Lorem ipsum dolor sit amet</a></h3>
+                <p class="mb-1">London, UK</p>
+                <div>
+                  <!-- rating -->
+                  <span class="fs-5 lh-1 text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="var(--rw-warning)"
+                      class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="var(--rw-warning)"
+                      class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="var(--rw-warning)"
+                      class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="var(--rw-warning)"
+                      class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="var(--rw-gray-400)"
+                      class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                  </span>
+                  <span class="fs-5 ms-1 lh-1 align-middle"><span class="text-dark fw-semi-bold">3.5</span> (12)</span>
+                </div>
               </div>
             </div>
-
           </div>
-          <div class="col-lg-4 col-md-6 pb-2">
-            <div class="card4">
-              <span class="icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
-                  stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3 12V10C3 5.58 6.58 2 11 2C15.42 2 19 5.58 19 10V12" />
-                  <path d="M4 14V10C4 6.686 6.686 4 10 4C13.314 4 16 6.686 16 10V14" />
-                  <path
-                    d="M4 14H6C6.55228 14 7 14.4477 7 15V17C7 17.5523 6.55228 18 6 18H5C4.44772 18 4 17.5523 4 17V14Z" />
-                  <path
-                    d="M16 14H18C18.5523 14 19 14.4477 19 15V17C19 17.5523 18.5523 18 18 18H17C16.4477 18 16 17.5523 16 17V14Z" />
-                  <path d="M12 18H14C14.5523 18 15 18.4477 15 19V20C15 20.5523 14.5523 21 14 21H12" />
-                </svg>
+          <!-- col -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="mb-6">
+              <!-- img -->
+              <div class="position-relative">
+                <a href="#"><img src="../assets/images/blog/wc-img-2.jpg" alt="" class="img-fluid rounded-3"></a>
 
-              </span>
-              <h4>Customer Support</h4>
-              <p>
-                Call our 24-hour helpline.
-              </p>
-              <p>
-                Phone number: +800-123-4567
-              </p>
-              <p>
-                Email Us: info@realwed.com
-
-
-              </p>
-
-              <div class="shine"></div>
-              <div class="background">
-                <div class="tiles">
-                  <div class="tile tile-1"></div>
-                  <div class="tile tile-2"></div>
-                  <div class="tile tile-3"></div>
-                  <div class="tile tile-4"></div>
-
-                  <div class="tile tile-5"></div>
-                  <div class="tile tile-6"></div>
-                  <div class="tile tile-7"></div>
-                  <div class="tile tile-8"></div>
-
-                  <div class="tile tile-9"></div>
-                  <div class="tile tile-10"></div>
+                <!-- like -->
+                <div class="position-absolute top-0 pe-2 pt-2 end-0">
+                  <a href="#" class="text-white text-hover-primary" data-bs-toggle="modal"
+                    data-bs-target="#favouriteIcon"><span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-heart" viewBox="0 0 16 16">
+                        <path
+                          d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                      </svg>
+                    </span></a>
                 </div>
-
-                <div class="line line-1"></div>
-                <div class="line line-2"></div>
-                <div class="line line-3"></div>
+              </div>
+              <!-- content -->
+              <div class="mt-3">
+                <h3 class="mb-0"><a href="#" class="text-inherit">Nullam Amet Nibh Ultrices</a></h3>
+                <p class="mb-1">Barcelona, ES</p>
+                <div>
+                  <!-- rating -->
+                  <span class="fs-5 lh-1 text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="var(--rw-warning)"
+                      class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="var(--rw-warning)"
+                      class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="var(--rw-warning)"
+                      class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="var(--rw-warning)"
+                      class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="var(--rw-gray-400)"
+                      class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                  </span>
+                  <span class="fs-5 ms-1 lh-1 align-middle"><span class="text-dark fw-semi-bold">4.9</span> (18)</span>
+                </div>
               </div>
             </div>
-
           </div>
-          <div class="col-lg-4 col-md-6 pb-2">
-            <div class="card4">
-              <span class="icon">
-                <svg 48 viewBox="0 0 24 24" 49 fill="none" 50 stroke="currentColor" 51 stroke-width="1.2" 52
-                  stroke-linecap="round" 53 stroke-linejoin="round" 54 xmlns="http://www.w3.org/2000/svg" 55>
-                  56
-                  <path 57
-                    d="M4.5 9.5V5.5C4.5 4.94772 4.94772 4.5 5.5 4.5H9.5C10.0523 4.5 10.5 4.94772 10.5 5.5V9.5C10.5 10.0523 10.0523 10.5 9.5 10.5H5.5C4.94772 10.5 4.5 10.0523 4.5 9.5Z"
-                    58 />
-                  59
-                  <path 60
-                    d="M13.5 18.5V14.5C13.5 13.9477 13.9477 13.5 14.5 13.5H18.5C19.0523 13.5 19.5 13.9477 19.5 14.5V18.5C19.5 19.0523 19.0523 19.5 18.5 19.5H14.5C13.9477 19.5 13.5 19.0523 13.5 18.5Z"
-                    61 />
-                  62
-                  <path d="M4.5 19.5L7.5 13.5L10.5 19.5H4.5Z" />
-                  63
-                  <path 64
-                    d="M16.5 4.5C18.1569 4.5 19.5 5.84315 19.5 7.5C19.5 9.15685 18.1569 10.5 16.5 10.5C14.8431 10.5 13.5 9.15685 13.5 7.5C13.5 5.84315 14.8431 4.5 16.5 4.5Z"
-                    65 />
-                  66
-                </svg>
-              </span>
-              <h4>Other Enquiries</h4>
-              <p>
-                Please contact us at the email below for all other inquiries.
-              </p>
-              <p>
-                Email Us: info@realwed.com
-              </p>
-
-              <div class="shine"></div>
-              <div class="background">
-                <div class="tiles">
-                  <div class="tile tile-1"></div>
-                  <div class="tile tile-2"></div>
-                  <div class="tile tile-3"></div>
-                  <div class="tile tile-4"></div>
-
-                  <div class="tile tile-5"></div>
-                  <div class="tile tile-6"></div>
-                  <div class="tile tile-7"></div>
-                  <div class="tile tile-8"></div>
-
-                  <div class="tile tile-9"></div>
-                  <div class="tile tile-10"></div>
+          <!-- col -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="mb-6">
+              <!-- img -->
+              <div class="position-relative">
+                <div id="carouselExampleSecond" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleSecond" data-bs-slide-to="0" class="active"
+                      aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleSecond" data-bs-slide-to="1"
+                      aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleSecond" data-bs-slide-to="2"
+                      aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="../assets/images/blog/wc-img-3.jpg" class="d-block w-100 rounded" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../assets/images/blog/wc-img-1.jpg" class="d-block w-100 rounded" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../assets/images/blog/wc-img-2.jpg" class="d-block w-100 rounded" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSecond"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSecond"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
-
-                <div class="line line-1"></div>
-                <div class="line line-2"></div>
-                <div class="line line-3"></div>
+                <!-- badge -->
+                <div class="position-absolute top-0 ps-2 pt-2">
+                  <span class="badge bg-warning">Featured</span>
+                </div>
+                <!-- like -->
+                <div class="position-absolute top-0 pe-2 pt-2 end-0 z-1">
+                  <a href="#" class="text-white text-hover-primary" data-bs-toggle="modal"
+                    data-bs-target="#favouriteIcon"><span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-heart" viewBox="0 0 16 16">
+                        <path
+                          d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                      </svg>
+                    </span></a>
+                </div>
+              </div>
+              <!-- content -->
+              <div class="mt-3">
+                <h3 class="mb-0"><a href="#" class="text-inherit">Praesent Deros Vitaex Egestas</a></h3>
+                <p class="mb-1">New York, US</p>
+                <div>
+                  <!-- rating -->
+                  <span class="fs-5 lh-1 text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="var(--rw-warning)"
+                      class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="var(--rw-warning)"
+                      class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="var(--rw-warning)"
+                      class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="var(--rw-warning)"
+                      class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="var(--rw-gray-400)"
+                      class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                  </span>
+                  <span class="fs-5 ms-1 lh-1 align-middle"><span class="text-dark fw-semi-bold">2.4</span> (10)</span>
+                </div>
               </div>
             </div>
-
           </div>
-
         </div>
       </div>
-
     </section>
-    <!-- section4 close-->
-    <!-- customer close -->
 
+    <section>
+      <div class="container">
+  <!-- faq -->
+    <div class="mb-6">
+      <div class="text-center">
+        <img src="assets/images/wedding arrow.png" alt="">
+      <h2 class="mb-3 text-center">Faq</h2>
 
+      </div>
+      <!-- faq -->
+      <!-- accordions -->
+      <div class="accordion accordion-flush" id="accordionFaq">
+        <!-- accordion item -->
+        <div class="accordion-item">
+          <!-- accordion header -->
+          <h2 class="accordion-header" id="flush-headingOne">
+            <a href="#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+              aria-expanded="false" aria-controls="flush-collapseOne">
+              Do you have a site fee for wedding receptions at your venue?
+            </a>
+          </h2>
+          <!-- collapse -->
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFaq">
+            <div class="accordion-body">
+              <p>Aenean eleifend tempor pellentesque. Ut diam ipsum, ultrices et felis sed, sodales sodales neque.
+                Ut ut lorem in nisi volutpat interdum.</p>
+              <ul class="list-unstyled">
+                <li class="mb-1">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--rw-success)"
+                      class="bi bi-check-circle" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                      <path
+                        d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                    </svg>
+                  </span>
+                  <span class="align-middle ms-1">Magna</span>
+                </li>
+                <li class="mb-1">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--rw-success)"
+                      class="bi bi-check-circle" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                      <path
+                        d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                    </svg>
+                  </span>
+                  <span class="align-middle ms-1">Condimentum</span>
+                </li>
+                <li class="mb-1">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--rw-success)"
+                      class="bi bi-check-circle" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                      <path
+                        d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                    </svg>
+                  </span>
+                  <span class="align-middle ms-1">Vivamus</span>
+                </li>
+                <li class="mb-1">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--rw-success)"
+                      class="bi bi-check-circle" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                      <path
+                        d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                    </svg>
+                  </span>
+                  <span class="align-middle ms-1">Nullam</span>
+                </li>
+                <li class="mb-1">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--rw-success)"
+                      class="bi bi-check-circle" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                      <path
+                        d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                    </svg>
+                  </span>
+                  <span class="align-middle ms-1">Praesent</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- accordion item -->
+        <div class="accordion-item">
+          <!-- accordion header -->
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <a href="#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+              aria-expanded="false" aria-controls="flush-collapseTwo">
+              Vestibulum ante ipsum primis in faucibus orci luctus ?
+            </a>
+          </h2>
+          <!-- collapse -->
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFaq">
+            <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+              richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+              quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+              single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+              wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+              occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of
+              them accusamus labore sustainable VHS.</div>
+          </div>
+        </div>
+        <!-- accordion item -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <a href="#" class="accordion-button collapsed" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Aliquam posuere velit ut nibh sagittis accumsan ?
+            </a>
+          </h2>
+          <!-- collapse -->
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFaq">
+            <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+              richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+              quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+              single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+              wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+              occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of
+              them accusamus labore sustainable VHS.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+  
   </main>
   <!-- footer -->
   <!-- footer -->
-
   <footer class="pt-12 pb-0">
 
     <div class="container">
@@ -470,7 +1108,7 @@
               <span id="copyright"> 2018 -
                 <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
               </span>
-              <span class="parata-f"> &nbsp; Banquet</span>
+               <span class="parata-f"> &nbsp; Banquet</span>
             </div>
             <div class="ms-3">
               <!-- list -->
@@ -1269,39 +1907,56 @@
       </div>
     </div>
   </div>
+  <!-- scripts -->
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Libs JS -->
+  <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/libs/flatpickr/dist/flatpickr.min.js"></script>
 
 
 
+  <!-- wow .js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
-    <!-- Libs JS -->
-    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
-    <!-- Owl Carousel JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/libs/flatpickr/dist/flatpickr.min.js"></script>
+  <!-- Theme JS -->
+  <script src="assets/js/theme.min.js"></script>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+  <script src="assets/libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/vendors/popup.js"></script>
 
-    <!-- wow .js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="assets/libs/leaflet/dist/leaflet.js"></script>
+  <script src="assets/js/vendors/map.js"></script>
 
-    <!-- Theme JS -->
-    <script src="assets/js/theme.min.js"></script>
+  <script>
+    var swiper = new Swiper(".vlogMySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      freeMode: true,
+      loop: true,
 
-
-
-
-    <script src="assets/js/gSap.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax-element.min.js"></script>
-
-
-
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        576: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 3,
+        },
+      },
+      // autoplay: {
+      //   delay: 2000,
+      // },
+    });
+  </script>
 
 </body>
 
