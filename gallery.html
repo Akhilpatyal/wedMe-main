@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="assets/libs/leaflet/dist/leaflet.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<link rel="shortcut icon" href="assets/images/logo/logo1.png" type="image/x-icon">
     <!-- swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -34,11 +34,10 @@
 </head>
 
 <body>
-
-  
-
-    <div class="dot"></div>
-    <div class="cursor-outline"></div>
+    <div class="mouse-follower">
+        <span class="cursor-outline"></span>
+        <span class="cursor-dot"></span>
+    </div>
 
     <!-- navbar -->
   <div class="navbar-transparent navbar-position">
@@ -125,9 +124,9 @@
   </div>
     <main>
         <!-- pageheader -->
-        <section class="pt-lg-21 pt-10 overlay-section-3 position-relative jarallax" data-jarallax data-speed="0.5" >
+        <section class="flex-display pt-lg-21 pt-10 overlay-section-3 position-relative jarallax" data-jarallax data-speed="0.5" >
   <div class="jarallax-img"
-                style="background-image: url('assets/images/blog/blog9.png');">
+                style="background-image: url('assets/images/banner/galleryBanner.png');">
             </div>
             <div class="container position-relative" style="z-index: 2;">
                 <div class="row justify-content-center pb-lg-17 pb-5 ">
@@ -885,9 +884,8 @@
     <!-- footer -->
     <!-- footer -->
 
+ <footer class="pt-12 pb-0">
 
-     <footer class="pt-12 pb-0">
-       
     <div class="container">
       <div class="row ">
         <!-- col -->
@@ -899,43 +897,30 @@
 
               <span style="color: #f48c06;">Ban</span>Quet
 
-
             </a>
 
 
             <p class="mb-0 mt-4 pe-lg-16">Discover the most high rated wedding vendors and plan your wedding more
               better, forever.</p>
           </div>
-          
+
         </div>
-        
-        <div class="col-lg-2 col-md-3 col-6">
+
+        <div class="col-lg-3 col-md-3 col-6">
           <!-- list -->
           <div class="mb-4 mb-lg-0 content__item">
             <h3 class="mb-3 text-light link link--thebe">Quick Links</h3>
-             
+
             <ul class="list-unstyled">
-              <li><a href="#" class="white text-body text-hover-primary link link--metis">About us</a></li>
-              <li><a href="#" class="white text-body text-hover-primary link link--metis">Venues</a></li>
-              <li><a href="#" class="white text-body text-hover-primary link link--metis">Venders</a></li>
-              <li><a href="#" class="white text-body text-hover-primary link link--metis">Partner</a></li>
+              <li><a href="about.html" class="white text-body text-hover-primary link link--metis">About us</a></li>
+              <li><a href="venues.html" class="white text-body text-hover-primary link link--metis">Venues</a></li>
+              <li><a href="vendors.html" class="white text-body text-hover-primary link link--metis">Venders</a></li>
+              <li><a href="gallery.html" class="white text-body text-hover-primary link link--metis">Gallery</a></li>
 
             </ul>
           </div>
         </div>
-        <div class="col-lg-2 col-md-3 col-6">
-          <!-- list -->
-          <div class="mb-4 mb-lg-0 text-center content__item">
-            <h3 class="mb-3 text-light  link link--thebe">Support</h3>
-            <ul class="list-unstyled">
-              <li><a href="#" class="white text-body text-hover-primary link link--metis ">Get in Touch</a></li>
-              <li><a href="#" class="white text-body text-hover-primary link link--metis">Help Center</a></li>
-              <li><a href="#" class="white text-body text-hover-primary link link--metis">Live Chat</a></li>
-              <li><a href="#" class="white text-body text-hover-primary link link--metis">How it works</a></li>
 
-            </ul>
-          </div>
-        </div>
         <div class="col-lg-3 col-md-6 col-12">
           <!-- contact -->
           <div class="mb-4 mb-lg-0 content__item">
@@ -955,7 +940,7 @@
               <span id="copyright"> 2018 -
                 <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
               </span>
-               <span class="parata-f"> &nbsp; Banquet</span>
+              <span class="parata-f"> &nbsp; Banquet</span>
             </div>
             <div class="ms-3">
               <!-- list -->
@@ -997,27 +982,35 @@
 
   </footer>
 
+ <!-- Gsap scripts -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" ></script>
+    <script src="assets/js/gSap.js"></script>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <!-- Libs JS -->
-    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
-    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/libs/flatpickr/dist/flatpickr.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
+    <!-- <script src="./assets/libs/jquery/dist/jquery.min.js"></script> -->
+    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/flatpickr/dist/flatpickr.min.js"></script>
+    <!-- JS (optional, only needed for licensing if required) -->
+    <script src="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons@3.3.1/license.min.js"></script>
 
+ 
 
-    <!-- wow .js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <!-- wow .js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
     <!-- Theme JS -->
-    <script src="assets/js/theme.min.js"></script>
-
-    <script src="assets/libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/vendors/popup.js"></script>
-
-    <script src="assets/libs/leaflet/dist/leaflet.js"></script>
-    <script src="assets/js/vendors/map.js"></script>
+    <script src="./assets/js/theme.min.js"></script>
+ 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
 
         <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax-element.min.js"></script>

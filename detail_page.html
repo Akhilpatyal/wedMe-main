@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="assets/libs/leaflet/dist/leaflet.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<link rel="shortcut icon" href="assets/images/logo/logo1.png" type="image/x-icon">
   <!-- swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -160,8 +160,11 @@
 
 <body>
   
-  <div class="dot"></div>
-  <div class="cursor-outline"></div>
+    <div class="mouse-follower">
+        <span class="cursor-outline"></span>
+        <span class="cursor-dot"></span>
+    </div>
+
 
   <!-- navbar -->
   <div class="navbar-transparent navbar-position">
@@ -248,7 +251,7 @@
   </div>
   <main>
 
-    <section class="pt-lg-21 pt-10 overlay-section "
+    <section class="flex-display pt-lg-21 pt-10 overlay-section-3 "
       style="background: url(assets/images/blog/blog12.png) no-repeat; background-size: cover; background-position: center center;">
 
       <div class="container">
@@ -591,8 +594,8 @@
           </div>
           <div class="col-lg-4 col-md-5 col-12">
             <!-- card -->
-            <div class="card mb-4" style="background-color: #f7e7ce;">
-              <div class="card-body p-4">
+            <div class="card mb-4" >
+              <div class="card-body p-4 " style="background-color: #f7e7ce !important;">
                 <h3 class="mb-3">Message to vendor</h3>
                 <!-- form -->
                 <form class="needs-validation" novalidate>
@@ -902,144 +905,13 @@
       </div>
     </section>
 
-    <section>
-      <div class="container">
-  <!-- faq -->
-    <div class="mb-6">
-      <div class="text-center">
-        <img src="assets/images/wedding arrow.png" alt="">
-      <h2 class="mb-3 text-center">Faq</h2>
-
-      </div>
-      <!-- faq -->
-      <!-- accordions -->
-      <div class="accordion accordion-flush" id="accordionFaq">
-        <!-- accordion item -->
-        <div class="accordion-item">
-          <!-- accordion header -->
-          <h2 class="accordion-header" id="flush-headingOne">
-            <a href="#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
-              aria-expanded="false" aria-controls="flush-collapseOne">
-              Do you have a site fee for wedding receptions at your venue?
-            </a>
-          </h2>
-          <!-- collapse -->
-          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-            data-bs-parent="#accordionFaq">
-            <div class="accordion-body">
-              <p>Aenean eleifend tempor pellentesque. Ut diam ipsum, ultrices et felis sed, sodales sodales neque.
-                Ut ut lorem in nisi volutpat interdum.</p>
-              <ul class="list-unstyled">
-                <li class="mb-1">
-                  <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--rw-success)"
-                      class="bi bi-check-circle" viewBox="0 0 16 16">
-                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                      <path
-                        d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
-                    </svg>
-                  </span>
-                  <span class="align-middle ms-1">Magna</span>
-                </li>
-                <li class="mb-1">
-                  <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--rw-success)"
-                      class="bi bi-check-circle" viewBox="0 0 16 16">
-                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                      <path
-                        d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
-                    </svg>
-                  </span>
-                  <span class="align-middle ms-1">Condimentum</span>
-                </li>
-                <li class="mb-1">
-                  <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--rw-success)"
-                      class="bi bi-check-circle" viewBox="0 0 16 16">
-                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                      <path
-                        d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
-                    </svg>
-                  </span>
-                  <span class="align-middle ms-1">Vivamus</span>
-                </li>
-                <li class="mb-1">
-                  <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--rw-success)"
-                      class="bi bi-check-circle" viewBox="0 0 16 16">
-                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                      <path
-                        d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
-                    </svg>
-                  </span>
-                  <span class="align-middle ms-1">Nullam</span>
-                </li>
-                <li class="mb-1">
-                  <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--rw-success)"
-                      class="bi bi-check-circle" viewBox="0 0 16 16">
-                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                      <path
-                        d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
-                    </svg>
-                  </span>
-                  <span class="align-middle ms-1">Praesent</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- accordion item -->
-        <div class="accordion-item">
-          <!-- accordion header -->
-          <h2 class="accordion-header" id="flush-headingTwo">
-            <a href="#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
-              aria-expanded="false" aria-controls="flush-collapseTwo">
-              Vestibulum ante ipsum primis in faucibus orci luctus ?
-            </a>
-          </h2>
-          <!-- collapse -->
-          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-            data-bs-parent="#accordionFaq">
-            <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-              richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
-              quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-              single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
-              wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-              occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of
-              them accusamus labore sustainable VHS.</div>
-          </div>
-        </div>
-        <!-- accordion item -->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingThree">
-            <a href="#" class="accordion-button collapsed" data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-              Aliquam posuere velit ut nibh sagittis accumsan ?
-            </a>
-          </h2>
-          <!-- collapse -->
-          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-            data-bs-parent="#accordionFaq">
-            <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-              richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
-              quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-              single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
-              wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-              occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of
-              them accusamus labore sustainable VHS.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-      </div>
-    </section>
+    
 
   
   </main>
   <!-- footer -->
   <!-- footer -->
-  <footer class="pt-12 pb-0">
+   <footer class="pt-12 pb-0">
 
     <div class="container">
       <div class="row ">
@@ -1052,7 +924,6 @@
 
               <span style="color: #f48c06;">Ban</span>Quet
 
-
             </a>
 
 
@@ -1062,33 +933,21 @@
 
         </div>
 
-        <div class="col-lg-2 col-md-3 col-6">
+        <div class="col-lg-3 col-md-3 col-6">
           <!-- list -->
           <div class="mb-4 mb-lg-0 content__item">
             <h3 class="mb-3 text-light link link--thebe">Quick Links</h3>
 
             <ul class="list-unstyled">
-              <li><a href="#" class="white text-body text-hover-primary link link--metis">About us</a></li>
-              <li><a href="#" class="white text-body text-hover-primary link link--metis">Venues</a></li>
-              <li><a href="#" class="white text-body text-hover-primary link link--metis">Venders</a></li>
-              <li><a href="#" class="white text-body text-hover-primary link link--metis">Partner</a></li>
+              <li><a href="about.html" class="white text-body text-hover-primary link link--metis">About us</a></li>
+              <li><a href="venues.html" class="white text-body text-hover-primary link link--metis">Venues</a></li>
+              <li><a href="vendors.html" class="white text-body text-hover-primary link link--metis">Venders</a></li>
+              <li><a href="gallery.html" class="white text-body text-hover-primary link link--metis">Gallery</a></li>
 
             </ul>
           </div>
         </div>
-        <div class="col-lg-2 col-md-3 col-6">
-          <!-- list -->
-          <div class="mb-4 mb-lg-0 text-center content__item">
-            <h3 class="mb-3 text-light  link link--thebe">Support</h3>
-            <ul class="list-unstyled">
-              <li><a href="#" class="white text-body text-hover-primary link link--metis ">Get in Touch</a></li>
-              <li><a href="#" class="white text-body text-hover-primary link link--metis">Help Center</a></li>
-              <li><a href="#" class="white text-body text-hover-primary link link--metis">Live Chat</a></li>
-              <li><a href="#" class="white text-body text-hover-primary link link--metis">How it works</a></li>
 
-            </ul>
-          </div>
-        </div>
         <div class="col-lg-3 col-md-6 col-12">
           <!-- contact -->
           <div class="mb-4 mb-lg-0 content__item">
@@ -1108,7 +967,7 @@
               <span id="copyright"> 2018 -
                 <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
               </span>
-               <span class="parata-f"> &nbsp; Banquet</span>
+              <span class="parata-f"> &nbsp; Banquet</span>
             </div>
             <div class="ms-3">
               <!-- list -->
@@ -1907,29 +1766,42 @@
       </div>
     </div>
   </div>
-  <!-- scripts -->
-
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <!-- Libs JS -->
-  <script src="assets/libs/jquery/dist/jquery.min.js"></script>
-  <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/libs/flatpickr/dist/flatpickr.min.js"></script>
+    <!-- scripts -->
+<!-- Gsap scripts -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" ></script>
+    <script src="assets/js/gSap.js"></script>
 
 
+    <!-- Libs JS -->
+    <!-- Owl Carousel JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- <script src="./assets/libs/jquery/dist/jquery.min.js"></script> -->
+    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/flatpickr/dist/flatpickr.min.js"></script>
+    <!-- JS (optional, only needed for licensing if required) -->
+    <script src="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons@3.3.1/license.min.js"></script>
+
+ 
 
   <!-- wow .js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
-  <!-- Theme JS -->
-  <script src="assets/js/theme.min.js"></script>
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.min.js"></script>
+ 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
 
-  <script src="assets/libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
-  <script src="assets/js/vendors/popup.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax-element.min.js"></script>
 
   <script src="assets/libs/leaflet/dist/leaflet.js"></script>
   <script src="assets/js/vendors/map.js"></script>
-
   <script>
     var swiper = new Swiper(".vlogMySwiper", {
       slidesPerView: 1,

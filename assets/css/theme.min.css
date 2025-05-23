@@ -19280,7 +19280,8 @@ fieldset:disabled .btn {
   --rw-card-group-margin: 0.75rem;
   word-wrap: break-word;
   background-clip: border-box;
-  background-color: var(--rw-card-bg);
+  /* background-color: var(--rw-card-bg); */
+  background: linear-gradient(to top, #f9dcae, #ffffff);
   border: var(--rw-card-border-width) solid var(--rw-card-border-color);
   border-radius: var(--rw-card-border-radius);
   display: flex;
@@ -44551,8 +44552,8 @@ footer .content {
 /*  */
 /* HeroSection */
 .HeroSection {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
-    url('../images/banner/bann1.png') no-repeat center center/cover;
+  /* background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
+    url('../images/banner/bann1.png') no-repeat center center/cover; */
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -44583,19 +44584,19 @@ footer .content {
 /* Individual slide background images and staggered delays */
 .hero-slider .slide-1 {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
-    url('../images/banner/bann1.png');
+    url('../images/banner/banner13.png');
   animation-delay: 0s;
 }
 
 .hero-slider .slide-2 {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
-    url('../images/banner/bann2.png');
+    url('../images/banner/ctaBanner.png');
   animation-delay: 4s;
 }
 
 .hero-slider .slide-3 {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
-    url('../images/banner/bann3.png');
+    url('../images/banner/banner12.png');
   animation-delay: 8s;
 }
 
@@ -44623,46 +44624,8 @@ footer .content {
 }
 
 /* cursor */
-.dot {
-  height: 8px;
-  width: 8px;
-  border-radius: 50%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  background-color: #dc2626;
-  /* border: 2px solid orange; */
-  /* mix-blend-mode: difference; */
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-}
-
-.cursor-outline {
-  height: 30px;
-  width: 30px;
-  border: 2px solid #dc2626;
-  position: fixed;
-  top: 0;
-  left: 0;
-  border-radius: 50%;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  z-index: 9998;
-}
-
-.dot,
-.cursor-outline {
-  pointer-events: none;
-  z-index: 9999;
-  /* High enough so it stays above everything */
-}
-
-.cursor-outline.scale-up {
-  transform: translate(-50%, -50%) scale(2);
-  transition: transform 0.5s ease-in-out;
-}
-
+ 
+  
 .white {
   color: white !important;
 }
@@ -45074,14 +45037,15 @@ footer .content {
   display: inline-block;
   width: 18px;
   height: 7px;
-  background: rgba(27, 114, 97, 0.3);
+  background: #FB8500;
   position: relative;
   transition: all 0.4s ease-in-out;
+  border-radius: 4px;
 }
 
 .owl-carousel .owl-dots button.owl-dot.active span {
   width: 30px;
-  background: #1b7261;
+  background: #eba436;
 }
 
 /*-------------------------------
@@ -45115,7 +45079,7 @@ footer .content {
 }
 
 .project-card .project-info .project-title h3:hover a {
-  color: #1b7261;
+  color: #FB8500;
 }
 
 .project-card .project-info .project-title p {
@@ -46380,7 +46344,7 @@ figure img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(349deg, rgb(205 140 62 / 66%), rgba(0, 0, 0, 0.4));
+  background: linear-gradient(326deg, rgb(205 140 62 / 53%), rgba(0, 0, 0, 0.6));
 
   /* Adjust darkness here */
   z-index: 0;
@@ -46422,6 +46386,7 @@ figure img {
 .overlay-section-3 {
   position: relative;
   z-index: 1;
+  min-height: 100vh;
 }
 
 .overlay-section-3::before {
@@ -46431,7 +46396,7 @@ figure img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(3deg, rgb(0 0 0 / 69%), rgba(0, 0, 0, 0.4));
+  background: linear-gradient(3deg, rgb(0 0 0 / 60%), rgba(0, 0, 0, 0.4));
   /* Adjust darkness here */
   z-index: 0;
 }
@@ -47547,7 +47512,7 @@ Appointment Section  CSS
   width: 50px;
   height: 50px;
   line-height: 50px;
-  background-color: #B56D94;
+  background-color: #f1ad60b5;
   border-radius: 36px;
   text-align: center;
   margin-right: 10px;
@@ -49212,4 +49177,57 @@ body {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+}
+
+.jarallax-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center; /* This centers the image */
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.flex-display{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*  */
+.about-two__points-left,
+.about-two__points-right {
+  background-color: #f8f8f8; /* default */
+  padding: 20px; /* optional, to give spacing */
+  transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 10px;
+}
+
+/* Hover effect for each individual box */
+.about-two__points-left:hover,
+.about-two__points-right:hover {
+  background-color: #f3ae43;
+  color: white;
+  border-radius: 10px;
+}
+
+/* Make inner text and icons white on hover */
+.about-two__points-left:hover p,
+.about-two__points-left:hover .icon,
+.about-two__points-left:hover .icon span,
+.about-two__points-right:hover p,
+.about-two__points-right:hover .icon,
+.about-two__points-right:hover .icon span {
+  color: white;
+    border-radius: 10px;
+}
+
+
+/* background */
+.bg-1{
+    background: linear-gradient(to top, #f9dcae, #ffffff)!important;
+    padding: 2px 5px;
+    border-bottom-left-radius: 4px ;
+    border-bottom-right-radius: 4px ;
 }
